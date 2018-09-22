@@ -1,0 +1,33 @@
+[package]
+name    = "blog"
+version = "0.0.0"
+authors = ["Casey Rodarmor <casey@rodarmor.com>"]
+edition = "2018"
+
+[dependencies]
+Inflector      = "0.11"
+askama         = "0.9"
+git2           = "0.11"
+heck           = "0.3"
+lazy_static    = "1.1"
+libc           = "0.2"
+notify         = "4"
+pulldown-cmark = "0.6"
+regex          = "1"
+rss            = "1.9"
+sass-rs        = "0.2"
+serde_yaml     = "0.8"
+snafu          = "0.6"
+structopt      = "0.3"
+walkdir        = "2"
+
+[dependencies.serde]
+version  = "1"
+features = ["derive"]
+
+[dependencies.chrono]
+version  = "0.4.6"
+features = ["serde"]
+
+[build-dependencies]
+askama = "0.9"

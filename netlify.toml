@@ -1,0 +1,4 @@
+[Settings]
+
+[dev]
+publish = "."

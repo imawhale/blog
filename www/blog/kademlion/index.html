@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kademlion – Casey Rodarmor's Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/blog/index.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/blog/feed.xml">
+</head>
+<body>
+  <header class="links">
+    <span><a href="/blog/">Casey Rodarmor's Blog</a></span>
+    <div class="spacer"></div><a href="/">homepage</a> <a href="mailto:casey@rodarmor.com">mail</a>
+    <a href="https://github.com/casey">github</a>
+  </header>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/kademlion/" class="title">Kademlion</a> <span class="tags"><a href=
+      "/blog/tag/cryptocurrency/" class="tag">cryptocurrency</a></span>
+    </header>
+    <p>A <a href="https://en.wikipedia.org/wiki/Kademlia">Kademlia</a>-inspired modification of
+    <a href="https://arxiv.org/abs/1701.04439">Dandelion</a> for use in <a href=
+    "https://grin-tech.org/">Grin</a>.</p>
+    <h3><em>What</em></h3>
+    <p>On boot and restart, Grin nodes pick a random 256-bit <em>node id</em> which is broadcast to
+    their peers.</p>
+    <p>Upon receiving a block, a new <em>epoch</em> begins if <code>block_height % 10 == 0</code>.
+    The <em>epoch id</em> is the 256-bit blake2b hash of the block hash of the block that started
+    the epoch. (I.E. the double blake2b hash of the block header.)</p>
+    <p>At the start of each epoch, every node:</p>
+    <ul>
+      <li>
+        <p>Calculates the <em>relay weight</em> of itself and all peers using the formula:
+        <code>relay_weight = peer_id xor epoch_id</code>. Relay weight is interpreted as a 256 bit
+        unsigned integer.</p>
+      </li>
+      <li>
+        <p>Selects the node among itself and all peers with the highest relay weight as the
+        <em>relay target</em>.</p>
+      </li>
+      <li>
+        <p>Determines that it is in <em>stem mode</em> if the relay target is a peer, and in
+        <em>fluff mode</em> if the relay target is itself.</p>
+      </li>
+    </ul>
+    <p>Then, for every stem transaction received:</p>
+    <ul>
+      <li>
+        <p>If it is in stem mode, it immediately relays it to its relay target.</p>
+      </li>
+      <li>
+        <p>If it is in fluff mode, it aggregates transactions until its next patience timer
+        expires, then broadcast them.</p>
+      </li>
+    </ul>
+    <h3><em>Why</em></h3>
+    <p>"Heavy" peers will naturally be chosen for relay targets, creating agreed-upon stem paths
+    and fluff sinks, and leading to more opportunities for transaction aggregation.</p>
+    <h3><em>Notes</em></h3>
+    <ul>
+      <li>
+        <p>In a well-connected network, one node may be the sink for all transactions during a
+        given epoch, and thus see all unaggregated transactions during the epoch. It may thus be
+        desirable to stick to random mode selection as in Dandelion++, so as to break up stem paths
+        with randomly selected fluff sinks.</p>
+      </li>
+      <li>
+        <p>If block hashes are used directly as the epoch ID, peers could select peer IDs with a
+        large number of leading 1s, thus biasing relay target selection towards themselves. Thus,
+        we take the double blake2b hash of the block header as the epoch ID.</p>
+      </li>
+      <li>
+        <p>Since the epoch ID is known by all, a node could pick node IDs that had high relay
+        weight during that epoch. To provent this, if a node connects to a new peer it should use a
+        randomly assigned peer ID for the current epoch.</p>
+      </li>
+      <li>
+        <p>Should this modification be called <em>Kademlion</em>, or
+        <em>Objective-Dandelion</em>?</p>
+      </li>
+      <li>
+        <p>Thanks to Antioch Peverell for the <a href=
+        "https://github.com/mimblewimble/grin/issues/2176">clear description of Dandelion++</a>
+        whose language I shamelessly copied.</p>
+      </li>
+    </ul>
+  </article>
+</body>
+</html>

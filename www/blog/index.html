@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Casey Rodarmor's Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/blog/index.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/blog/feed.xml">
+</head>
+<body>
+  <header class="links">
+    <span><a href="/blog/">Casey Rodarmor's Blog</a></span>
+    <div class="spacer"></div><a href="/">homepage</a> <a href="mailto:casey@rodarmor.com">mail</a>
+    <a href="https://github.com/casey">github</a>
+  </header>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/decentralize-messaging/" class="title">Decentralize Messaging</a>
+    </header>
+    <p>Twitter is <a href="https://twitter.com/jack/status/1204766078468911106">funding a team</a>
+    to decentralize social media. I think they should start with messaging.</p>
+    <h2>TL;DR</h2>
+    <h3>Why</h3>
+    <ul>
+      <li>Messaging is a subset of social media.</li>
+      <li>Users are tired of the wild proliferation of messaging apps.</li>
+      <li>Social networks are all different, making them hard targets for standardization;
+      messaging apps are all the same, making them easy targets for standardization and
+      interoperability.</li>
+      <li>Messaging is easier to scale.</li>
+    </ul>
+    <h3>How</h3>
+    <ul>
+      <li>Build on the matrix protocol.</li>
+      <li>Extend email.</li>
+      <li>Or maybe both.</li>
+    </ul>
+    <h2>Why</h2>
+    <h3>messaging is a subset of social media</h3>
+    <p>Messaging is a key feature of all social media platforms; decentralizing messaging is a
+    prerequisite to decentralizing social media. And, even though it is a subset of social media,
+    it still captures many of social media's central challenges: spam, moderation, and, most
+    importantly, identity.</p>
+    <h3>users are tired of the wild proliferation of messaging apps</h3>
+    <p>The average user is more negatively impacted by the proliferation of messaging apps than
+    they are by the proliferation of social networks.</p>
+    <p>I have heard many people express irritation that they must use an inordinate number of
+    messaging apps to communicate.</p>
+    <p>I haven't heard the same complaints regarding the proliferation of social media platforms.
+    My best as to why this is the case is that the need to communicate one-on-one with an
+    individual has no substitute. If I'm meeting Bob for lunch, being able to message anyone but
+    Bob is completely useless. So, I must use whichever app Bob uses, or get Bob to use whatever
+    app I use, and, if we don't have a common messaging app, one of us will need to install a new
+    one, furthering the proliferation problem.</p>
+    <h3>social network distinctiveness</h3>
+    <p>It's tempting to think that decentralizing social media should be begin with the features
+    that we most readily associate with social media platforms, like posts, news feeds, and liking.
+    However, the implementations of these features differ, and different social media platforms
+    provide very different experiences.</p>
+    <p>This makes these features of social media a hard target for standardization. However, the
+    messaging features of these platforms are all nearly identical, making messaging an easy target
+    for standardization.</p>
+    <p>The goal is to decentralize social media as a whole, not just messaging, but messaging can
+    be used as an initial step, with further extensions tackling the various individual features of
+    social media platforms.</p>
+    <h3>messaging is easier to scale</h3>
+    <p>At the upper end, tens of millions of users may engage with an individual tweet, whereas
+    group messages are limited to no more than fifty users. This makes messaging a more attractive
+    initial target for decentralization, since it avoids needing to hit massive scale on day
+    one.</p>
+    <h3>a clear target</h3>
+    <p>So, to summarize all the above, decentralized messaging has an obvious target feature set to
+    aim for, a strong benefit to end users that will drive adoption, puts off hard scaling
+    challenges, and can be extended in the future to all the features we associate with social
+    media.</p>
+    <h2>How</h2>
+    <p>I see two promising and complementary paths to decentralized messaging: building on the new
+    and shiny <a href="https://matrix.org">Matrix protocol</a>, and gradually extending email.</p>
+    <p>The Matrix protocol has the huge advantage of being modern. It already supports many, if not
+    most, of the features of modern messaging apps.</p>
+    <p>Email, on the other hand, is ancient, weird, and has no support for modern luxuries like
+    end-to-end encryption or user-presence notifications. However, email is extremely widely
+    adopted, and a broadly supported and popular "Email 2.0" might receive a great deal of
+    support.</p>
+    <p>Although it would be a challenging process to navigate, email could be extended with
+    features until it reaches parity with modern messaging apps, and further extended to support
+    the features of existing social media networks. These extensions can be added in backwards
+    compatible ways that allow mail agents to negotiate upgrades, falling back to plain email when
+    extensions are not available.</p>
+    <p>These extensions could include:</p>
+    <ul>
+      <li>delivery receipts</li>
+      <li>optional read receipts</li>
+      <li>user presence information</li>
+      <li>binary serialization for efficiency and extensibility</li>
+      <li>end-to-end encryption</li>
+      <li>WebRTC signalling for negotiating VOIP and video chat</li>
+      <li>signed introduction tokens to reduce spam</li>
+      <li>a standard extension mechanism</li>
+    </ul>
+    <p>A hybrid approach might be to design an email-to-matrix protocol upgrade negotiation
+    mechanism, allowing legacy email addresses to seamlessly upgrade to a modern messaging
+    protocol.</p>
+    <p>Whatever the approach, building a decentralized messaging protocol and integrating it into
+    twitter would serve as an excellent foot in the door for decentralizing the entire social media
+    landscape.</p>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/popcorn-time-should-become-a-browser/" class="title">Popcorn Time Should
+      Become a Browser</a> <span class="tags"><a href="/blog/tag/programming/" class=
+      "tag">programming</a></span>
+    </header>
+    <p><em>I am not a lawyer. This is not legal advice.</em></p>
+    <p>Popcorn Time-style video streaming apps seem to be vulnerable to legal action by
+    rightsholders.</p>
+    <p>For example, the <a href=
+    "https://torrentfreak.com/registrar-suspends-popcorn-time-domain-name-following-complaint-200121/">
+    popcorntime.sh domain was recently suspended</a>, and <a href=
+    "https://torrentfreak.com/operator-of-popcorn-time-info-site-is-liable-for-piracy-supreme-court-rules-200115/">
+    the operator of a site which merely provided information about how to obtain and use Popcorn
+    Time was sentenced to prison</a>.</p>
+    <p>Although given that Popcorn Time's servers do not themselves host infringing content this
+    may seem a bit unfair, it is simply the reality of the world we live in.</p>
+    <p>It is interesting to note, however, that although web browsers can be used in exactly the
+    same way as Popcorn Time, namely searching for and viewing copyrighted movies, the developers
+    of web browsers have thus far not faced successful legal challenges.</p>
+    <p>I believe that there are two major factors that differentiate Popcorn Time from web
+    browsers, and contribute to Popcorn Time's legal vulnerability:</p>
+    <ol>
+      <li>
+        <p>Upon opening a web browser, the user must supply the URL of the site they wish to visit.
+        Compare this to Popcorn Time, where upon opening the application for the first time, the
+        user is immediately presented with a selection of unlicensed Hollywood movies to
+        download.</p>
+        <p>This difference greatly weakens Popcorn Time's claims against contributory copyright
+        infringement. The developers of Popcorn Time cannot credibly claim to be ignorant to the
+        types of movies that their users are downloading, whereas a web browser developer can
+        credibly claim that the choice of website to visit is always left to the end user.</p>
+      </li>
+      <li>
+        <p>Web browsers have substantial non-infringing uses. "Substantial non-infringing use" is
+        jargon for a legal test used in the United States which protects the creator or purveyor of
+        a piece of technology from liability for its use in infringement by users if that
+        technology has "substantial non-infringing uses". For the canonical example, see <a href=
+        "https://en.wikipedia.org/wiki/Sony_Corp._of_America_v._Universal_City_Studios,_Inc."><em>Sony
+        Corp. of America v. Universal City Studios, Inc.</em></a>.</p>
+      </li>
+    </ol>
+    <p>Whereas a web browser provider can rightly claim that there are many websites, <a href=
+    "https://youtu.be/2JO3oJybBTw">and it's possible an infringing one might slip in, there would
+    be no way of knowing</a>, the popcorn time developers cannot claim the same. There is a single,
+    fixed Popcorn Time backend, run by the Popcorn Time team, serving the same search results to
+    every user.</p>
+    <p>Fortunately, even given the above, I believe that Popcorn Time could implement a small
+    number of strategic changes that would allow it to withstand future legal aggression:</p>
+    <ul>
+      <li>Add a URL bar, like a web browser's, to the top of the current GUI.</li>
+      <li>Make the URL bar empty when opening the app for the first time, and display no default
+      search results to the user.</li>
+      <li>When the user enters a URL, use the existing Popcorn Time API protocol to contact the
+      backend at that URL, and begin displaying search results from that backend to the user.</li>
+      <li>If the app is closed and re-opened, keep the URL bar and the search results populated
+      from the last run of the app.</li>
+    </ul>
+    <p>These changes would be simple, have a minimal impact on the current (quite excellent!) user
+    experience, and leverage interaction flows, i.e. a URL bar, that users already understand.</p>
+    <p>Additionally, the Popcorn Time team should create an official default search backend which
+    focuses exclusively on free, non-infringing, user-created content.</p>
+    <p>These steps would, I believe, nicely protect the developers and distributors of Popcorn Time
+    from further legal challenges:</p>
+    <ul>
+      <li>
+        <p>Popcorn Time, when first opened, would display no search results by default, and would
+        require the user to direct the app with the URL of a site that they would like to visit.
+        This would avoid the current situation where a litigator sitting in front of a judge can
+        open the Popcorn Time application, and it will by immediately display a choice selection of
+        infringing content, which makes for a terrible first impression.</p>
+      </li>
+      <li>
+        <p>Users of the Popcorn Time application could use it to access both infringing and
+        non-infringing content, providing a nice argument that the application does in fact have
+        <em>substantial non-infringing uses</em>.</p>
+      </li>
+      <li>
+        <p>Infringement via the application would be entirely at the direction of the end-user, and
+        not directly assisted by the default search results provided by the developers.</p>
+      </li>
+      <li>
+        <p>Developers wouldn't be running a search back end with infringing content, which is the
+        only component of the current Popcorn Time system that stores problematic metadata about
+        infringing content.</p>
+      </li>
+      <li>
+        <p>I suspect that the official free-content focused search backend would be successful and
+        useful in its own right.</p>
+      </li>
+      <li>
+        <p>Since the search backend could now be switched by end users, a very large number of
+        third-party backends would likely appear, serving content that might not be otherwise
+        available from the current Popcorn Time backend.</p>
+      </li>
+    </ul>
+    <p>In short, Popcorn Time should become a browser, and then all those lawyers and their
+    handlers can go pound sand.</p>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/the-stack/" class="title">The Stack</a>
+    </header>
+    <p>Computering is a party. The stack is best visualized as a bunch of Jenga blocks on the
+    floor, and the heap as a bunch of balloons floating around bumping into each other on the
+    ceiling. The fact that the stack usually grows downwards in memory is a travesty.</p>
+  </article>
+  <hr>
+  <article>
+    <p>I saw a janitor sweeping dirt from the fronds of his enormous push broom with a normal-sized
+    broom.</p>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/unix-utilities-in-rust-for-great-success/" class="title">Unix Utilities in
+      Rust for Great Success</a> <span class="tags"><a href="/blog/tag/programming/" class=
+      "tag">programming</a></span>
+    </header>
+    <p>I've often been asked for suggestions for an appropriate first project in Rust, and I think
+    that writing a version of a unix utility is a great choice, for a bunch of reasons!</p>
+    <ul>
+      <li>
+        <p>There is a diverse and colorful cast of characters to choose from that all provide an
+        appropriate scope and difficulty level, such as:</p>
+      </li>
+      <li>
+        <p><code>tree</code>: Print a graphical representation tree in visual form</p>
+      </li>
+      <li>
+        <p><code>strings</code>: Extract plaintext strings from binary files</p>
+      </li>
+      <li>
+        <p><code>wc</code>: Count the lines, characters, and bytes in a file</p>
+      </li>
+      <li>
+        <p><code>ls</code>: List the contents of a directory</p>
+      </li>
+      <li>
+        <p><code>nc</code>: Read and write bytes to network sockets</p>
+      </li>
+      <li>
+        <p><code>cal</code>: Print a cute text calendar</p>
+      </li>
+      <li>
+        <p><code>cat</code>: Copy streams to stdout</p>
+      </li>
+      <li>
+        <p><code>cut</code>: Extract delimited fields from linewise text records</p>
+      </li>
+      <li>
+        <p><code>sort</code>: Sort lines</p>
+      </li>
+      <li>
+        <p><code>uniq</code>: Print only unique lines</p>
+      </li>
+      <li>
+        <p>The existing implementation provided by your system serves as a specification, giving
+        you an idea of how the tool works and whether or not your implementation has the same
+        behavior.</p>
+      </li>
+      <li>
+        <p>The core functionality of these utilities is very simple, allowing a learner to quickly
+        build something useful. And, many have additional features, allowing a learner to add and
+        build if they wish. <code>ls</code> is simple, but <code>ls -l</code> is quite the
+        project!</p>
+      </li>
+      <li>
+        <p>Many creative additions are possible, like colorful output, expressive configuration,
+        and fun and useful new features.</p>
+      </li>
+      <li>
+        <p>IO and error handling are often front-and-center when writing these utilities, which
+        provides a great chance to get used to explicit error handling.</p>
+      </li>
+      <li>
+        <p><a href="https://github.com/TeXitoi/structopt">structopt</a> makes argument parsing a
+        breeze. And, by leveraging the type system and custom-derive, it provides a nice example of
+        a situation where Rust has enormous advantages over other languages, allowing you to do
+        more with less code.</p>
+      </li>
+      <li>
+        <p>Rust binaries are fast to load and run, so performance is on par with native C
+        implementations, and often much better than implementations in slower languages.</p>
+      </li>
+      <li>
+        <p>Rust binaries are self-contained, so packaging and distribution is manageable, so you
+        can share your work with the world.</p>
+      </li>
+      <li>
+        <p>It's fun to use utilities that you wrote in your day-to-day workflow!</p>
+      </li>
+      <li>
+        <p>There are lots of fabulous examples of utilities in the rust ecosystem, like <a href=
+        "https://github.com/BurntSushi/ripgrep">ripgrep</a>, <a href=
+        "https://github.com/sharkdp/fd">fd</a>, <a href="https://github.com/sharkdp/bat">bat</a>,
+        <a href="https://github.com/ogham/exa">exa</a>, and <a href=
+        "https://github.com/sharkdp/hexyl">hexyl</a>. (Damn, David Peter is a beast.)</p>
+      </li>
+      <li>
+        <p>If you're teaching others, a simple utility like <code>strings</code> makes for a great
+        demonstration of the basics of the language.</p>
+      </li>
+    </ul>
+    <p>I think whether you start with the book or a project like this depends on the learner.</p>
+    <p>I much prefer to jump in and struggle mightily, so I started with a project like this (what
+    eventually became <a href="https://github.com/casey/just/">just</a>), but I think a lot of
+    people might prefer to start with <a href="https://doc.rust-lang.org/book/">the book</a>, or at
+    least parts of the book.</p>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/kademlion/" class="title">Kademlion</a> <span class="tags"><a href=
+      "/blog/tag/cryptocurrency/" class="tag">cryptocurrency</a></span>
+    </header>
+    <p>A <a href="https://en.wikipedia.org/wiki/Kademlia">Kademlia</a>-inspired modification of
+    <a href="https://arxiv.org/abs/1701.04439">Dandelion</a> for use in <a href=
+    "https://grin-tech.org/">Grin</a>.</p>
+    <h3><em>What</em></h3>
+    <p>On boot and restart, Grin nodes pick a random 256-bit <em>node id</em> which is broadcast to
+    their peers.</p>
+    <p>Upon receiving a block, a new <em>epoch</em> begins if <code>block_height % 10 == 0</code>.
+    The <em>epoch id</em> is the 256-bit blake2b hash of the block hash of the block that started
+    the epoch. (I.E. the double blake2b hash of the block header.)</p>
+    <p>At the start of each epoch, every node:</p>
+    <ul>
+      <li>
+        <p>Calculates the <em>relay weight</em> of itself and all peers using the formula:
+        <code>relay_weight = peer_id xor epoch_id</code>. Relay weight is interpreted as a 256 bit
+        unsigned integer.</p>
+      </li>
+      <li>
+        <p>Selects the node among itself and all peers with the highest relay weight as the
+        <em>relay target</em>.</p>
+      </li>
+      <li>
+        <p>Determines that it is in <em>stem mode</em> if the relay target is a peer, and in
+        <em>fluff mode</em> if the relay target is itself.</p>
+      </li>
+    </ul>
+    <p>Then, for every stem transaction received:</p>
+    <ul>
+      <li>
+        <p>If it is in stem mode, it immediately relays it to its relay target.</p>
+      </li>
+      <li>
+        <p>If it is in fluff mode, it aggregates transactions until its next patience timer
+        expires, then broadcast them.</p>
+      </li>
+    </ul>
+    <h3><em>Why</em></h3>
+    <p>"Heavy" peers will naturally be chosen for relay targets, creating agreed-upon stem paths
+    and fluff sinks, and leading to more opportunities for transaction aggregation.</p>
+    <h3><em>Notes</em></h3>
+    <ul>
+      <li>
+        <p>In a well-connected network, one node may be the sink for all transactions during a
+        given epoch, and thus see all unaggregated transactions during the epoch. It may thus be
+        desirable to stick to random mode selection as in Dandelion++, so as to break up stem paths
+        with randomly selected fluff sinks.</p>
+      </li>
+      <li>
+        <p>If block hashes are used directly as the epoch ID, peers could select peer IDs with a
+        large number of leading 1s, thus biasing relay target selection towards themselves. Thus,
+        we take the double blake2b hash of the block header as the epoch ID.</p>
+      </li>
+      <li>
+        <p>Since the epoch ID is known by all, a node could pick node IDs that had high relay
+        weight during that epoch. To provent this, if a node connects to a new peer it should use a
+        randomly assigned peer ID for the current epoch.</p>
+      </li>
+      <li>
+        <p>Should this modification be called <em>Kademlion</em>, or
+        <em>Objective-Dandelion</em>?</p>
+      </li>
+      <li>
+        <p>Thanks to Antioch Peverell for the <a href=
+        "https://github.com/mimblewimble/grin/issues/2176">clear description of Dandelion++</a>
+        whose language I shamelessly copied.</p>
+      </li>
+    </ul>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/cabal/" class="title">Cabal</a>
+    </header>
+    <p>We all stood, gathered our things, walked down the cafe stairs and out to the dark and
+    bustling Berlin street.</p>
+    <p>After a few goodbyes and handshakes, everyone headed off in different directions, for
+    different destinations.</p>
+    <p>The meeting had felt momentous to me, a marker of strange and interesting times to come. I
+    headed to the U-Bahn, alone.</p>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/new-rustacean-resources/" class="title">New Rustacean Resources</a>
+      <span class="tags"><a href="/blog/tag/programming/" class="tag">programming</a></span>
+    </header>
+    <ul>
+      <li>
+        <p><a href="https://rustup.rs"><em>obtain</em></a></p>
+        <p>Rustup is the rust toolchain manager. It can install Rust and keep it up-to-date.</p>
+      </li>
+      <li>
+        <p><a href="https://code.visualstudio.com"><em>write</em></a></p>
+        <p>Visual Studio Code is easy to use and has great Rust integration.</p>
+      </li>
+      <li>
+        <p><a href="https://doc.rust-lang.org/book/"><em>read</em></a></p>
+        <p>The Rust Book is a comprehensive guide to the entire language.</p>
+      </li>
+      <li>
+        <p><a href="https://play.rust-lang.org"><em>play</em></a></p>
+        <p>The Rust Playground allows you to quickly try out and share code snippets.</p>
+      </li>
+      <li>
+        <p><a href="https://github.com/rustlings/rustlings"><em>exercise</em></a></p>
+        <p>Rustlings are bite-sized exercises for learning rust.</p>
+      </li>
+      <li>
+        <p><a href="https://discord.gg/bGugdPp"><em>chat</em></a></p>
+        <p>The Rust-Lang discord instance is a great place to chat about rust.</p>
+      </li>
+    </ul>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/mushrooms/" class="title">Mushrooms</a> <span class="tags"><a href=
+      "/blog/tag/fiction/" class="tag">fiction</a></span>
+    </header>
+    <p>I woke up last night after only a few hours of sleep, sweaty and disoriented.</p>
+    <p>Maybe it was miasmatic vapors rising up from beneath South of Market streets. Maybe it was
+    the widening gyre opening up under the world. Maybe it was nothing at all. I don't know.</p>
+    <p>It felt like the world had ended, but I was still there. And the lights of the city
+    glimmered through the window, so, it was still there too.</p>
+    <div class="center">
+      <a href="/blog/mushrooms/">⋯</a>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/lightning-exchange/" class="title">Lightning Exchange</a> <span class=
+      "tags"><a href="/blog/tag/cryptocurrency/" class="tag">cryptocurrency</a></span>
+    </header>
+    <div class="paragraph">
+      <p>The <a href="https://en.wikipedia.org/wiki/Lightning_Network">Lightning Network</a> has
+      the potential to greatly improve cryptocurrency exchanges.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lighting Network payment channels could be established between users and exchanges to
+      speed the transfer of funds.</p>
+    </div>
+    <div class="paragraph">
+      <p>This would be a huge boon, moving many on-chain deposit and withdrawal transactions
+      off-chain, but is possibly only the beginning.</p>
+    </div>
+    <div class="paragraph">
+      <p>Since Lightning Network payments can span different blockchains, an exchange could use a
+      cross-chain Lightning node to expose its internal order book to external entities.</p>
+    </div>
+    <div class="paragraph">
+      <p>As an example, imagine that an exchange has an LTC/BTC trading pair and wants to allow
+      non-exchange users to fill the orders in their order book.</p>
+    </div>
+    <div class="paragraph">
+      <p>The exchange runs a lightning node with a BTC channel and an LTC channel:</p>
+    </div>
+    <div class="listingblock">
+      <div class="content">
+        <pre class="highlight"><code>x:   exchange node
+a:   third party node
+b:   third party node
+&lt;-&gt;: payment channel
+
+   BTC     LTC
+a &lt;---&gt; x &lt;---&gt; b</code></pre>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>The exchange dynamically sets the exchange rates across the channels based on their
+      current best bid, best ask, and fee schedule.</p>
+    </div>
+    <div class="paragraph">
+      <p>With a best ask of 0.6 and a 1% fee, the exchange sets the BTC→LTC exchange rate like
+      so:</p>
+    </div>
+    <div class="listingblock">
+      <div class="content">
+        <pre class="highlight"><code>   BTC     LTC
+a ----&gt; x ----&gt; b
+  0.606   1.000</code></pre>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>When a payment is routed across the channels in this direction, LTC sell orders are
+      filled.</p>
+    </div>
+    <div class="paragraph">
+      <p>With a best bid of 0.4 and a 1% fee, the exchange sets the exchange rate on the channel in
+      the LTC→BTC direction like so:</p>
+    </div>
+    <div class="listingblock">
+      <div class="content">
+        <pre class="highlight"><code>   BTC     LTC
+a &lt;---- x &lt;---- b
+  0.400   1.010</code></pre>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>A payment routed in this direction fills LTC buy orders.</p>
+    </div>
+    <div class="paragraph">
+      <p>In this way, exchanges can expose their internal order book externally and trustlessly.
+      Anyone who wishes to make cross-chain Lightning Network payments will discover and travel
+      over these routes with no special effort required by the exchange, assuming that their rates
+      are competitive. Also, it’s likely that third parties will appear whose sole purpose is to
+      search the Lightning Network for arbitrage loops and travel them until they are exhausted,
+      thus bridging multiple exchanges when their order books cross.</p>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/iota/" class="title">Iota</a> <span class="tags"><a href=
+      "/blog/tag/cryptocurrency/" class="tag">cryptocurrency</a></span>
+    </header>
+    <div class="paragraph">
+      <p>IOTA is a cryptocurrency targeting the internet of things. It purports to be scalable,
+      decentralized, and feeless. Unfortunately it is none of those things.</p>
+    </div>
+    <div class="paragraph">
+      <p>In this article I attempt to summarize the numerous technical, social, and ethical
+      problems surrounding the IOTA project, The IOTA Foundation, and the IOTA developers.</p>
+    </div>
+    <div class="center">
+      <a href="/blog/iota/">⋯</a>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/actuality-films/" class="title">Actuality Films</a>
+    </header>
+    <ul>
+      <li>
+        <p><a href="https://vimeo.com/160106895"><em>Glas</em></a>, 1958<br>
+        Glass-blowing, automation and all that jazz.</p>
+      </li>
+      <li>
+        <p><a href="https://vimeo.com/127605643"><em>Farewell, Etaoin shrdlu</em></a>, 1978<br>
+        The last day of linotype at the New York Times.</p>
+      </li>
+      <li>
+        <p><a href="https://youtu.be/CwuMY-_V4dc"><em>National Disintegrations</em></a>, 2017<br>
+        On the Geneva Freeport.</p>
+      </li>
+      <li>
+        <p><a href="https://youtu.be/GdUScE7VZq8"><em>What Happens Just Before Show Time At the Met
+        Opera</em></a>, 2017<br>
+        Behind the scenes at the Met, scored with inspired percussion.</p>
+      </li>
+    </ul>
+  </article>
+  <hr>
+  <article>
+    <div class="center">
+      <p><em><a href=
+      "https://sixfigureinvesting.com/2016/10/is-shorting-uvxy-tvix-vxx-the-perfect-trade">VXX</a>
+      is a dangerous chimeric creature; it is structured like a bond, trades like a stock, follows
+      VIX futures and decays like an option. Handle with care.</em></p>
+      <p>And, currently being <a href=
+      "https://www.reddit.com/r/wallstreetbets/comments/6v7ser/pissed_off_at_myself_need_to_vent_want_to_punch/">
+      algo traded</a> by <a href="https://streamable.com/b4sfj">a program written in Excel
+      VBA.</a></p>
+      <p>Strange times indeed.</p>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/structural-heterogeneity/" class="title">Structural Heterogeneity</a>
+      <span class="tags"><a href="/blog/tag/cryptocurrency/" class="tag">cryptocurrency</a></span>
+    </header>
+    <p>Investing in cryptocurrencies is not the same as buying simple equity in a company.</p>
+    <p>Although each company has a different business model, they and the equity they issue are
+    largely structurally homogeneous. They hold their monies in banks, pay for their expenses with
+    wire transfers and cheques, follow prescribed rules of accounting, and issue stock that
+    operates according to well understood rules. This is not to say that said practices are good or
+    bad. They are simply a known factor.</p>
+    <p>Cryptocurrencies and tokens, however, are structurally heterogeneous. They have different
+    codebases, modes of operation, levels of complexity, and security models. Although broadly
+    lumped into the same category, they can, by the nature of these differences, have almost
+    nothing in common.</p>
+    <p>Investing in one is like buying stock in a company with novel business models, banking
+    practices, and accounting methods, and furthermore whose stock is issued under a bespoke scheme
+    and follows unique trading rules.</p>
+    <p>Accordingly, a much, much greater level of care is required when making such investments. If
+    any one of these novel mechanisms fail, your investment may go up in billowing smoke and flames
+    overnight.</p>
+    <p>This is not to say that you should completely avoid cryptocurrencies and tokens, just, you
+    know, do your homework.</p>
+  </article>
+  <hr>
+  <article>
+    <div class="center">
+      I only program in PL/I because I'm BASED.
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/delinearization/" class="title">Delinearization</a> <span class=
+      "tags"><a href="/blog/tag/programming/" class="tag">programming</a></span>
+    </header>
+    <p>Programs first crawled from the murky oceans as simple lists of instructions that executed
+    in sequence. From these humble beginnings they have since evolved an astonishing number of ways
+    of delinearizing.</p>
+    <p>In fact, most programming paradigms simply amount to different ways to transform a linear
+    source file into a program with nonlinear behavior.</p>
+    <p>Some examples:</p>
+    <ul>
+      <li>gotos that unconditionally jump to another point in the program</li>
+      <li>an abort instruction that stops the program at some point other than the end</li>
+      <li>a macro facility that substitutes one instruction for one or more other instructions</li>
+      <li>a source file concatenation facility that concatenates multiple source files</li>
+      <li>an include directive that is substituted for the contents of a source file</li>
+      <li>structured repetition and selection, a la for, while, if, and switch</li>
+      <li>subroutines and functions</li>
+      <li>array oriented programming that replace explicit repetition with implicit repetition</li>
+      <li>first class functions which delegation of behavior to the caller</li>
+      <li>object oriented programming with dynamic dispatch, which allow the runtime type of an
+      object to determine which instructions to execute</li>
+      <li>aspect oriented programming, pattern matching against the structure of the call stack to
+      execute instructions when functions are called or return</li>
+      <li>event driven programming, executing instructions in response to external events</li>
+      <li>declarative programming, which essentially delegates execution of one program to
+      another</li>
+    </ul>
+  </article>
+  <hr>
+  <article>
+    <div style="height: 1em; position: relative;" class="jumble-container">
+      <script>
+      let container = document.getElementsByClassName('jumble-container')[0];
+      let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      function pick_letter() {
+      return letters[Math.floor(Math.random() * letters.length)];
+      }
+      for (let i = 0; i < 100; i++) {
+      let letter = document.createElement('div');
+      letter.textContent = pick_letter();
+      letter.style.position = 'absolute';
+      letter.style.transform = 'rotate(' + Math.random() + 'turn)';
+      letter.style.marginLeft = '' + Math.random() * 100 + '%';
+      container.appendChild(letter);
+      }
+      </script>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <div class="center">
+      Parse structure from the languageless void.
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/transcript/" class="title">Transcript</a> <span class="tags"><a href=
+      "/blog/tag/fiction/" class="tag">fiction</a></span>
+    </header>
+    <p>This is pretty nuts. I was poking around in the storage area of my house, and I found a huge
+    cardboard box filled with letters and audio cassettes and dust. Everything was Danish, German,
+    and English, but mostly Danish. The name Max Rasmussen was everywhere, so I think it was all
+    his stuff. I had to get a tape player at best buy to play the tapes, but surprisingly, they all
+    played fine. One of them was an interview, in English, between Max and a man named Hans. I
+    listened to it a few times, and I don't even know what to say. It's transcribed below.</p>
+    <div class="center">
+      <a href="/blog/transcript/">⋯</a>
+    </div>
+  </article>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/declarative-programming/" class="title">Declarative Programming</a>
+      <span class="tags"><a href="/blog/tag/fiction/" class="tag">fiction</a></span>
+    </header>
+    <p>"Well," he began, moving closer to her, "declarative programming is when you tell the
+    computer what you want, and then the computer figures out how to get it. Pretty sweet,
+    huh?"</p>
+    <p>"What kinds of things can you tell the computer you want?" she asked excitedly, her cheeks
+    beginning to flush.</p>
+    <p>He thought for a moment, and began stroking her hair gently. "All kinds of things. There's a
+    language called prolog you can use to ask about logical relationships. In SQL you can ask
+    questions about huge quantities of data. With a program like bison you can declaratively
+    describe a language, letting bison generate a program that recognizes it."</p>
+    <p>"Oh," she said breathlessly, leaning her head on his shoulder, "so I don't have to worry
+    about choosing an algorithm--the computer will pick one for me?"</p>
+    <div class="center">
+      <a href="/blog/declarative-programming/">⋯</a>
+    </div>
+  </article>
+</body>
+</html>

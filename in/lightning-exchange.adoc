@@ -1,0 +1,48 @@
+published: 2018-03-01T17:28:00-07:00
+tags:      [cryptocurrency]
++++
+The https://en.wikipedia.org/wiki/Lightning_Network[Lightning Network] has the potential to greatly improve cryptocurrency exchanges.
+
+Lighting Network payment channels could be established between users and exchanges to speed the transfer of funds.
+
+This would be a huge boon, moving many on-chain deposit and withdrawal transactions off-chain, but is possibly only the beginning.
+
+Since Lightning Network payments can span different blockchains, an exchange could use a cross-chain Lightning node to expose its internal order book to external entities.
+
+As an example, imagine that an exchange has an LTC/BTC trading pair and wants to allow non-exchange users to fill the orders in their order book.
+
+The exchange runs a lightning node with a BTC channel and an LTC channel:
+
+```
+x:   exchange node
+a:   third party node
+b:   third party node
+<->: payment channel
+
+   BTC     LTC
+a <---> x <---> b
+```
+
+The exchange dynamically sets the exchange rates across the channels based on their current best bid, best ask, and fee schedule.
+
+With a best ask of 0.6 and a 1% fee, the exchange sets the BTC->LTC exchange rate like so:
+
+```
+   BTC     LTC
+a ----> x ----> b
+  0.606   1.000
+```
+
+When a payment is routed across the channels in this direction, LTC sell orders are filled.
+
+With a best bid of 0.4 and a 1% fee, the exchange sets the exchange rate on the channel in the LTC->BTC direction like so:
+
+```
+   BTC     LTC
+a <---- x <---- b
+  0.400   1.010
+```
+
+A payment routed in this direction fills LTC buy orders.
+
+In this way, exchanges can expose their internal order book externally and trustlessly. Anyone who wishes to make cross-chain Lightning Network payments will discover and travel over these routes with no special effort required by the exchange, assuming that their rates are competitive. Also, it's likely that third parties will appear whose sole purpose is to search the Lightning Network for arbitrage loops and travel them until they are exhausted, thus bridging multiple exchanges when their order books cross.

@@ -1,0 +1,4 @@
+base_url           = "https://blog.rodarmor.com"
+build_search_index = false
+compile_sass       = true
+highlight_code     = true

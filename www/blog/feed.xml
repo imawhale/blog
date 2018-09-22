@@ -1,0 +1,1013 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Casey Rodarmor&apos;s Blog</title>
+    <link>https://rodarmor.com/blog</link>
+    <description>smoods</description>
+    <language>en</language>
+    <copyright>Copyright and related rights waived via CC0</copyright>
+    <lastBuildDate>Thu, 13 Feb 2020 04:15:47 -0800</lastBuildDate>
+    <item>
+      <title>Declarative Programming</title>
+      <link>https://rodarmor.com/blog/declarative-programming</link>
+      <guid>https://rodarmor.com/blog/declarative-programming</guid>
+      <pubDate>Fri, 07 Mar 2008 01:22:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>&quot;Well,&quot; he began, moving closer to her, &quot;declarative programming is when you tell the computer what you want, and then the computer figures out how to get it. Pretty sweet, huh?&quot;</p>
+<p>&quot;What kinds of things can you tell the computer you want?&quot; she asked excitedly, her cheeks beginning to flush.</p>
+<p>He thought for a moment, and began stroking her hair gently. &quot;All kinds of things. There's a language called prolog you can use to ask about logical relationships. In SQL you can ask questions about huge quantities of data. With a program like bison you can declaratively describe a language, letting bison generate a program that recognizes it.&quot;</p>
+<p>&quot;Oh,&quot; she said breathlessly, leaning her head on his shoulder, &quot;so I don't have to worry about choosing an algorithm--the computer will pick one for me?&quot;</p>
+<p>He began caressing her breasts.</p>
+<p>She took his silence as an affirmation. &quot;That's so cool that it just does it--it must be really smart to pick the right algorithm!&quot; she enthused.</p>
+<p>&quot;Well...&quot; he trailed off, still fondling her breasts.</p>
+<p>&quot;What?&quot; She asked, nervously.</p>
+<p>&quot;Um...&quot; he said, &quot;it's not quite like that.&quot; His hands stopped moving.</p>
+<p>She sensed he was backpedaling. &quot;Well?&quot; she demanded.</p>
+<p>He laughed awkwardly. &quot;Heh... You see, most declarative programming systems only know about one algori--&quot;</p>
+<p>&quot;It must be a great algorithm!&quot; She interrupted, with renewed intellectual arousal. &quot;What is it?&quot;</p>
+<p>He hesitated for as long as he could... &quot;Brute force search,&quot; he said, guiltily.</p>
+<p>&quot;What the fuck!?!?&quot; She yelled, straightening and yanking his hands from her chest.</p>
+<p>&quot;Wait, baby, it's not so bad!&quot; He begged.</p>
+<p>&quot;I'm listening.&quot; She said, staring him straight in the eyes.</p>
+<p>&quot;Well, if you're careful and you program in an idiomatic way, you ca--&quot;</p>
+<p>A venomous glare silenced him mid-sentence. She stood suddenly, grabbing his hat from the night stand and moving towards the open window.</p>
+<p>&quot;My Stetson!&quot; He shrieked, jumping to his feet, the spurs on his cowboy boots jangling feebly. &quot;But baby, didn't that parser generator thing sound cool?&quot; He pleaded.</p>
+<p>She stopped. &quot;Well... yeah, that was pretty neat...&quot; she begrudgingly acknowledged, softening.</p>
+<p>&quot;And that doesn't use a brute force algorithm. It builds an automata for you, an LR parser,&quot; he said.</p>
+<p>She smiled to herself, seeming to relent momentarily. He could see that she was touched by the idea of a program that could understand other programs.</p>
+<p>&quot;See, declarative programming isn't all bad...&quot; he cajoled, slowly walking towards her, palms outstretched.</p>
+<p>She started, as if waking from a dream. She looked at him. &quot;But what about in the case of an ambiguous grammar, for which an LR parser won't suffice?&quot;</p>
+<p>&quot;Don't worry,&quot; he said, smiling, &quot;bison can use a technique called generalized LR parsing, which allows it to follow all possible parses simultaneously, eventually finding a successful parse.&quot;</p>
+<p>She thought for a moment. &quot;But if we're following all possible paths simultaneously and discarding the ones which don't lead to successful parses, isn't that just brute force search?!?&quot; She asked, her voice ringing with betrayal.</p>
+<p>Her words were damming. Nothing he could say would placate her. He stood in embarrassed silence, eyeing his cowboy hat anxiously.</p>
+<p>She turned away from him, her emotions a mixture of pity and rage. He moved towards her, reaching for her hands, but it was too late. She had already hurled his hat from the window, as hard as she could. They watched silently as it flew into the night, lofted through the cool air as if by the breath of angels.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Transcript</title>
+      <link>https://rodarmor.com/blog/transcript</link>
+      <guid>https://rodarmor.com/blog/transcript</guid>
+      <pubDate>Sun, 24 Oct 2010 19:25:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>This is pretty nuts. I was poking around in the storage area of my house, and I found a huge cardboard box filled with letters and audio cassettes and dust. Everything was Danish, German, and English, but mostly Danish. The name Max Rasmussen was everywhere, so I think it was all his stuff. I had to get a tape player at best buy to play the tapes, but surprisingly, they all played fine. One of them was an interview, in English, between Max and a man named Hans. I listened to it a few times, and I don't even know what to say. It's transcribed below.</p>
+<p>RASMUSSEN: Can you say your name and age for the recorder?</p>
+<p>CSEMEGI: Hans Csemegi. 62.</p>
+<p>RASMUSSEN: That's an unusual name.</p>
+<p>CSEMEGI: Yes, it is, my parent were immigrants to Germany, and they wanted to give me a German sounding name.</p>
+<p>RASMUSSEN: And where were they from?</p>
+<p>CSEMEGI: Hungary.</p>
+<p>RASMUSSEN: Can you tell me a little bit about your life before the war?</p>
+<p>CSEMEGI: In many ways I had a very normal childhood. My father was an immigrant, but he was a natural with machines, so he found work easily. We lived very comfortably, all things considered. My mother's cousin and her family came to Germany around the same time, so I knew how other immigrants lived.</p>
+<p>RASMUSSEN: Did you speak German growing up?</p>
+<p>CSEMEGI: Yes, and Hungarian with my parents.</p>
+<p>RASMUSSEN: When did you find out you were a Jew?</p>
+<p>CSEMEGI: Not until I was seventeen. My parents kept it from me. But I found a box of letters in my mother's closet one day. I found out that my grandfather was actually a kosher butcher, imagine that...</p>
+<p>RASMUSSEN: How did you feel when you found out?</p>
+<p>CSEMEGI: I felt disgusted. I was a German, you know. I read the papers, I saw the newsreels, and I knew that Jews were the lowest of the low. I couldn't believe that I was one of them. I also knew right away that this was the worst thing that could happen to me. Kristallnacht was only a month away, and already the writing was on the wall.</p>
+<p>RASMUSSEN: How were you sent to the camps?</p>
+<p>CSEMEGI: One day they just found out. It was my father, someone had gotten suspicious where he worked, because he didn't look at all German. For that matter, I didn't look at all German, but I was so German in my manner that nobody gave me a second look. But he still had an accent. He was foreign. Our whole family; me, my sister, my mother, and my father; were told to report for processing one morning, and we were stuffed into trains to the camps that very afternoon.</p>
+<p>RASMUSSEN: What happened to your family?</p>
+<p>CSEMEGI: My father was killed before he even got onto the train. He was always a stubborn man. They divided the men and the women up, and my sister and my mother went to a different line. He started arguing with a soldier, and I think he put his hand on his soldier in anger, or something. And the soldier shot him. He was right to argue, I never saw my mother or my sister again.</p>
+<p>RASMUSSEN: &lt;coughing&gt; Sorry.</p>
+<p>CSEMEGI: After that I knew. I KNEW. That I was going to die like my father. I remember watching him fall, and I knew that one day soon I was going to hit the ground like he had, a corpse on the cobblestones. Eventually I was loaded onto a train. It was full of people, packed in like cordwood. I was screaming out, until I got tired. It was hot and wretched. Eventually we got to the camp, but some didn't even survive the train ride.</p>
+<p>RASMUSSEN: And how was the camp?</p>
+<p>CSEMEGI: At first it wasn't so bad. It was a prison, but the officer who was in charge of our division had just been reassigned. He had had sex with a female prisoner, another Jew, and it had gotten out. It was a scandal. So for weeks nobody was in charge, and we just sat around. It was terrible, but mostly because it was so boring. Eventually though they found someone to put in charge of us. His name was Göring, and everyone was afraid of him, even the other Nazis. He put us to work.</p>
+<p>RASMUSSEN: What kind of work?</p>
+<p>CSEMEGI: Carrying stones.</p>
+<p>RASMUSSEN: Carrying stones?</p>
+<p>CSEMEGI: Yes.</p>
+<p>RASMUSSEN: Just that? Did you build anything?</p>
+<p>CSEMEGI: No. Or... I don't know, we didn't, but some other prisoners might have. We just carried stones up a hill. I don't know what happened to them afterward. It was horrible. I didn't know what hell was like, before then. We only got a little soup and bread to eat, and even then only sometimes. We would have been starving to death anyway, but we starved more quickly because we were carrying stones for fourteen hours a day. We were so delicate, like baby birds that had fallen from the nest, and we just started to die.</p>
+<p>RASMUSSEN: Did you think you were going to die there?</p>
+<p>CSEMEGI: I was convinced. After I saw my father die, I knew my life was over. After two weeks of carrying stones, I thought it was just a matter of time before I fell down in the work line, never to get up again. But then the music started.</p>
+<p>RASMUSSEN: Music?</p>
+<p>CSEMEGI: Yes, music. I didn't know what to think. Every night when I lay down, I would hear music.</p>
+<p>RASMUSSEN: Like, just in your ears? Could anybody else hear it?</p>
+<p>CSEMEGI: No, only me.</p>
+<p>RASMUSSEN: What kind of music was it?</p>
+<p>CSEMEGI: It was, I don't know, songs, all different. No two nights were the same. Sometimes it was singing, sometimes it was from an orchestra, sometimes it was like beeps and blips, but musical. They have music like that these days, but I never heard it back then. I always called it technology music. But anyway... some nights it wasn't music at all, some times it was just noise, like static, or hissing, or just a strange alien drone. I didn't like that so much. The orchestral music was my favorite. I had always loved classical music, you see.</p>
+<p>RASMUSSEN: How long would it go on?</p>
+<p>CSEMEGI: At least a few hours. I didn't sleep much. But, I didn't sleep much even before the music started. I was so hungry, all the time. I used to just lie there at least half the night, feeling my body eat itself. I felt like I had already died, like a ghost. But with the music I was just in a trance, listening...</p>
+<p>RASMUSSEN: Did you tell anyone else?</p>
+<p>CSEMEGI: No. I was afraid that it would stop if I told anyone. The music brought color back to the world, and I knew I would die if it stopped.</p>
+<p>RASMUSSEN: The music helped?</p>
+<p>CSEMEGI: Yes. Every night, when it stopped for the night, I would dream about it. I would fall asleep right away, and just dream of the music. And then the next day, I would think about it, and about the night, when it would come again. Everyone else thought I was crazy.</p>
+<p>RASMUSSEN: Why did they think you were crazy?</p>
+<p>CSEMEGI: I didn't talk to anyone, I hardly took my eyes off the ground. Everyone else thought that I was one of the ones had died inside, and that soon I would die outside too. But I had this life in me, from the music.</p>
+<p>RASMUSSEN: Where did you think the music came from?</p>
+<p>CSEMEGI: I thought it was God. Singing to me.</p>
+<p>RASMUSSEN: God?</p>
+<p>CSEMEGI: Yes. Who else could it have been?</p>
+<p>RASMUSSEN: Why was it only you that heard it?</p>
+<p>CSEMEGI: I don't know why he didn't sing to the others.</p>
+<p>RASMUSSEN: &lt;INDISTINCT&gt;</p>
+<p>CSEMEGI: No. But, I wish he did. So many more would have survived.</p>
+<p>RASMUSSEN: What do you do now?</p>
+<p>CSEMEGI: Nothing, I'm retired.</p>
+<p>RASMUSSEN: But after the war?</p>
+<p>CSEMEGI: I moved to Denmark, to Apenrade, where they still speak German. Germany had betrayed me, you see. I worked as a stonemason. I was never clever with machines, like my father.</p>
+<p>RASMUSSEN: Did you ever marry?</p>
+<p>CSEMEGI: No. I was too busy with music. I had a record player. It was the first thing I bought after I found work. I didn't even have sheets on my bed, but I bought a record player. I wanted to have music. For years I would listen to records all night.</p>
+<p>RASMUSSEN: Do you still listen to music?</p>
+<p>CSEMEGI: Always. Less when my son came, since I couldn't afford a nanny, and had to take care of him.</p>
+<p>RASMUSSEN: Your son?</p>
+<p>CSEMEGI: Yes. I made love to a woman whose house I was working on. Just once, but she became pregnant, and didn't want him. I couldn't let her give him up, so I took him. She didn't want to have anything to do with us.</p>
+<p>RASMUSSEN: So you raised him?</p>
+<p>CSEMEGI: Yes. And he doesn't like music at all. &lt;laughs&gt; He would cry when I played my records. I hated him for that. But then I found out about headphones, and it was okay. Eventually, they even started making little tape players, that you could take with you. That was wonderful. I could work all day, listening to music.</p>
+<p>&lt;tape ends&gt;</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Parsing</title>
+      <link>https://rodarmor.com/blog/parsing</link>
+      <guid>https://rodarmor.com/blog/parsing</guid>
+      <pubDate>Sat, 16 Jul 2016 19:44:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<div class="center">
+  Parse structure from the languageless void.
+</div>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Jumble</title>
+      <link>https://rodarmor.com/blog/jumble</link>
+      <guid>https://rodarmor.com/blog/jumble</guid>
+      <pubDate>Wed, 07 Sep 2016 20:47:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[
+<div style="height: 1em; position: relative;" class="jumble-container">
+  <script>
+    let container = document.getElementsByClassName('jumble-container')[0];
+    let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    function pick_letter() {
+      return letters[Math.floor(Math.random() * letters.length)];
+    }
+    for (let i = 0; i < 100; i++) {
+      let letter = document.createElement('div');
+      letter.textContent = pick_letter();
+      letter.style.position = 'absolute';
+      letter.style.transform = 'rotate(' + Math.random() + 'turn)';
+      letter.style.marginLeft = '' + Math.random() * 100 + '%';
+      container.appendChild(letter);
+    }
+  </script>
+</div>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Delinearization</title>
+      <link>https://rodarmor.com/blog/delinearization</link>
+      <guid>https://rodarmor.com/blog/delinearization</guid>
+      <pubDate>Wed, 14 Sep 2016 21:53:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>Programs first crawled from the murky oceans as simple lists of instructions that executed in sequence. From these humble beginnings they have since evolved an astonishing number of ways of delinearizing.</p>
+<p>In fact, most programming paradigms simply amount to different ways to transform a linear source file into a program with nonlinear behavior.</p>
+<p>Some examples:</p>
+<ul>
+<li>gotos that unconditionally jump to another point in the program</li>
+<li>an abort instruction that stops the program at some point other than the end</li>
+<li>a macro facility that substitutes one instruction for one or more other instructions</li>
+<li>a source file concatenation facility that concatenates multiple source files</li>
+<li>an include directive that is substituted for the contents of a source file</li>
+<li>structured repetition and selection, a la for, while, if, and switch</li>
+<li>subroutines and functions</li>
+<li>array oriented programming that replace explicit repetition with implicit repetition</li>
+<li>first class functions which delegation of behavior to the caller</li>
+<li>object oriented programming with dynamic dispatch, which allow the runtime type of an object to determine which instructions to execute</li>
+<li>aspect oriented programming, pattern matching against the structure of the call stack to execute instructions when functions are called or return</li>
+<li>event driven programming, executing instructions in response to external events</li>
+<li>declarative programming, which essentially delegates execution of one program to another</li>
+</ul>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Based</title>
+      <link>https://rodarmor.com/blog/based</link>
+      <guid>https://rodarmor.com/blog/based</guid>
+      <pubDate>Fri, 16 Sep 2016 18:18:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<div class="center">
+I only program in PL/I because I'm BASED.
+</div>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Structural Heterogeneity</title>
+      <link>https://rodarmor.com/blog/structural-heterogeneity</link>
+      <guid>https://rodarmor.com/blog/structural-heterogeneity</guid>
+      <pubDate>Tue, 18 Jul 2017 18:27:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>Investing in cryptocurrencies is not the same as buying simple equity in a company.</p>
+<p>Although each company has a different business model, they and the equity they issue are largely structurally homogeneous. They hold their monies in banks, pay for their expenses with wire transfers and cheques, follow prescribed rules of accounting, and issue stock that operates according to well understood rules. This is not to say that said practices are good or bad. They are simply a known factor.</p>
+<p>Cryptocurrencies and tokens, however, are structurally heterogeneous. They have different codebases, modes of operation, levels of complexity, and security models. Although broadly lumped into the same category, they can, by the nature of these differences, have almost nothing in common.</p>
+<p>Investing in one is like buying stock in a company with novel business models, banking practices, and accounting methods, and furthermore whose stock is issued under a bespoke scheme and follows unique trading rules.</p>
+<p>Accordingly, a much, much greater level of care is required when making such investments. If any one of these novel mechanisms fail, your investment may go up in billowing smoke and flames overnight.</p>
+<p>This is not to say that you should completely avoid cryptocurrencies and tokens, just, you know, do your homework.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Exchange Traded Mutant</title>
+      <link>https://rodarmor.com/blog/exchange-traded-mutant</link>
+      <guid>https://rodarmor.com/blog/exchange-traded-mutant</guid>
+      <pubDate>Tue, 22 Aug 2017 22:23:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[
+<div class="center">
+  <p>
+    <em>
+      <a href="https://sixfigureinvesting.com/2016/10/is-shorting-uvxy-tvix-vxx-the-perfect-trade">VXX</a> is a dangerous chimeric creature; it is structured like a bond, trades like a stock, follows VIX futures and decays like an option. Handle with care.
+    </em>
+  </p>
+
+  <p>
+    And, currently being <a href="https://www.reddit.com/r/wallstreetbets/comments/6v7ser/pissed_off_at_myself_need_to_vent_want_to_punch/">algo traded</a> by <a href="https://streamable.com/b4sfj">a program written in Excel VBA.</a>
+  </p>
+
+  <p>
+    Strange times indeed.
+  </p>
+</div>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Actuality Films</title>
+      <link>https://rodarmor.com/blog/actuality-films</link>
+      <guid>https://rodarmor.com/blog/actuality-films</guid>
+      <pubDate>Mon, 09 Oct 2017 15:26:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<ul>
+<li>
+<p><a href="https://vimeo.com/160106895"><em>Glas</em></a>, 1958<br />
+Glass-blowing, automation and all that jazz.</p>
+</li>
+<li>
+<p><a href="https://vimeo.com/127605643"><em>Farewell, Etaoin shrdlu</em></a>, 1978<br />
+The last day of linotype at the New York Times.</p>
+</li>
+<li>
+<p><a href="https://youtu.be/CwuMY-_V4dc"><em>National Disintegrations</em></a>, 2017<br />
+On the Geneva Freeport.</p>
+</li>
+<li>
+<p><a href="https://youtu.be/GdUScE7VZq8"><em>What Happens Just Before Show Time At the Met Opera</em></a>, 2017<br />
+Behind the scenes at the Met, scored with inspired percussion.</p>
+</li>
+</ul>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Iota</title>
+      <link>https://rodarmor.com/blog/iota</link>
+      <guid>https://rodarmor.com/blog/iota</guid>
+      <pubDate>Thu, 22 Feb 2018 04:25:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA is a cryptocurrency targeting the internet of things. It purports to be scalable, decentralized, and feeless. Unfortunately it is none of those things.</p>
+</div>
+<div class="paragraph">
+<p>In this article I attempt to summarize the numerous technical, social, and ethical problems surrounding the IOTA project, The IOTA Foundation, and the IOTA developers.</p>
+</div>
+<h2 id="_issues" class="discrete">Issues</h2>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_centralization">Centralization</a></li>
+<li><a href="#_tip_selection_attack_vectors">Tip Selection Attack Vectors</a></li>
+<li><a href="#_ternary_overhead">Ternary Overhead</a></li>
+<li><a href="#_non_fungible_tokens">Non-fungible Tokens</a></li>
+<li><a href="#_broken_custom_hash_function">Broken Custom Hash Function</a></li>
+<li><a href="#_intentional_vulnerabilities">Intentional Vulnerabilities</a></li>
+<li><a href="#_no_recourse_against_spam">No Recourse Against Spam</a></li>
+<li><a href="#_non_zero_transaction_fees">Non-zero Transaction Fees</a></li>
+<li><a href="#_the_internet_of_things_does_not_exist">The Internet of Things Does Not Exist</a></li>
+<li><a href="#_premature_use_of_post_quantum_cryptography">Premature Use of Post-Quantum Cryptography</a></li>
+<li><a href="#_poor_wallet_security">Poor Wallet Security</a></li>
+<li><a href="#_unusable_network_and_wallet">Unusable Network and Wallet</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_centralization"><a class="anchor" href="#_centralization"></a>Centralization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA is fully centralized. All IOTA transactions must be approved by a server run by The IOTA Foundation called "The Coordinator". <sup class="footnote" id="_footnote_iota-is-centralized">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>The Coordinator exists to prevent denial-of-service attacks and double spends. The IOTA Foundation claims that at some point the coordinator can be phased out, but these claims are not credible due to the intractable nature of these issues. <sup class="footnote" id="_footnote_iota-doesnt-scale">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>Since all transactions must be approved by a single server, run by a single entity, IOTA is not decentralized. Additionally, The Coordinator is a single point of failure, and has been shut down intentionally by The IOTA Foundation to halt activity on the network. <sup class="footnote" id="_footnote_iota-shutdown">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>The source code of The Coordinator has not been released, making it impossible to audit it for vulnerabilities, correctness, or fairness. <sup class="footnote" id="_footnote_coordinator-source">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tip_selection_attack_vectors"><a class="anchor" href="#_tip_selection_attack_vectors"></a>Tip Selection Attack Vectors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA transactions are arranged in a directed acyclic graph, with each transaction referencing two previous transactions by hash. <sup class="footnote" id="_footnote_iota-whitepaper">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>The choice of which transactions to reference is a matter of local policy, and thus nodes have enormous leeway in the shape of the graph that they construct, and which tips they select.</p>
+</div>
+<div class="paragraph">
+<p>The functionality of the network depends on transactions getting confirmed in a timely fashion, even in the presence of malicious or selfish nodes. The IOTA developers claim that nodes will converge on a tip-selection strategy which confirms new transactions quickly, however this has not been proven to be the case. <sup class="footnote" id="_footnote_iota-alarming">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ternary_overhead"><a class="anchor" href="#_ternary_overhead"></a>Ternary Overhead</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Several algorithms in IOTA are implemented using balanced ternary, as opposed to binary. Balanced ternary is slightly more efficient, in theory, than binary, due to <a href="https://en.wikipedia.org/wiki/Radix_economy">radix economy</a>.</p>
+</div>
+<div class="paragraph">
+<p>However, in practice this gain in efficiency is more than offset by the overhead incurred by the need to translate ternary into binary for execution on commodity hardware and software.</p>
+</div>
+<div class="paragraph">
+<p>And, since vast majority of hardware fabrication facilities and technology are based on binary logic, a ternary computer more efficient than its binary counterpart will likely never materialize.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_non_fungible_tokens"><a class="anchor" href="#_non_fungible_tokens"></a>Non-fungible Tokens</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A transaction&#8217;s position within the DAG, and other factors, may make that transaction&#8217;s outputs more or less valuable than other transactions.</p>
+</div>
+<div class="paragraph">
+<p>Because of this, nodes will likely have to enforce additional local policies on which transactions to accept, which negatively impacts the fungibility of IOTA transaction outputs.</p>
+</div>
+<div class="paragraph">
+<p>Outputs that have been included in a Coordinator milestone are more valuable than those that haven&#8217;t, since The Coordinator is the current arbiter of truth in the IOTA system. Thus, if The Coordinator refuses to approve a transaction, its outputs are effectively worthless.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, transaction outputs that appear in a snapshot <sup class="footnote" id="_footnote_iota-snapshot">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> are more valuable than those that do not. Additionally, whatever entities control what transactions are included in a snapshot have enormous power are an additional centralization factor. For an example, if transactions are deemed to be "spam" and are not included in an snapshot, their outputs will be worthless.</p>
+</div>
+<div class="paragraph">
+<p>If IOTA adopts some kind of sharding mechanism, outputs will be more or less valuable on the basis of whether or not they are known to a particular shard. Outputs may have value within a shard, but be worthless outside of that shard.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_broken_custom_hash_function"><a class="anchor" href="#_broken_custom_hash_function"></a>Broken Custom Hash Function</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA used a custom hash function called Curl, which was later found to be insecure. <sup class="footnote" id="_footnote_curl-vulnerability-report">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup> <sup class="footnote" id="_footnote_breaking-curl">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>Although this vulnerability was patched, the choice to use a custom hash function was grossly incompetent, and reflecting extremely poorly on the judgment of the IOTA developers.</p>
+</div>
+<div class="paragraph">
+<p>Creating a cryptographically secure hash function is extremely difficult and furthermore unnecessary, as good hash functions are freely available. That Curl was eventually found to be vulnerable was an entirely predictable and avoidable outcome.</p>
+</div>
+<div class="paragraph">
+<p>The vulnerability in Curl required The IOTA Foundation to take custody of user funds, requiring users to to follow a byzantine reclamation process to get them back, with many users still unable to access their funds. <sup class="footnote" id="_footnote_reclaim-process">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_intentional_vulnerabilities"><a class="anchor" href="#_intentional_vulnerabilities"></a>Intentional Vulnerabilities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The IOTA developers have intentionally injected vulnerabilities into their open source code in an attempt to discourage copying. <sup class="footnote" id="_footnote_intentional-vulnerability">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>The code that they released was represented to be complete and free of known issues. The intentional inclusion of severe vulnerabilities in such code is plainly fraud. <sup class="footnote" id="_footnote_open-source-fraud">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup> <sup class="footnote" id="_footnote_iota-issues">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_no_recourse_against_spam"><a class="anchor" href="#_no_recourse_against_spam"></a>No Recourse Against Spam</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>No global transaction limit is enforced in IOTA, making it vulnerable to malicious participants generating a high enough volume of transactions to overwhelm the network. If the network becomes popular, nodes will likely be overwhelmed by non-malicious participants that simply generate a high volume of transactions. <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>IOTA is intended to be run on nodes with low power, compute, memory, disk, and network bandwidth, and such nodes will be easily overwhelmed by even a modest number of transactions. <sup class="footnote" id="_footnote_infinite-scalability">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_non_zero_transaction_fees"><a class="anchor" href="#_non_zero_transaction_fees"></a>Non-zero Transaction Fees</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA transactions do not pay an explicit fee. <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> However, this does not mean that IOTA transactions are free.</p>
+</div>
+<div class="paragraph">
+<p>IOTA nodes must dedicate significant power, compute resources, and die space to perform the proof-of-work needed to generate transactions and process incoming transactions.</p>
+</div>
+<div class="paragraph">
+<p>Also, since the incentive for a transaction to be confirmed is unclear, a node may be required to pay a permanode, a node in another shard, or a central issuer of snapshots to confirm a transaction.</p>
+</div>
+<div class="paragraph">
+<p>Thus, even if a node pays no explicit fee for its transactions, it may pay significant implicit fees, and thus the claim that IOTA transactions are free of fees is only superficially true, and false in every sense that matters. <sup class="footnote" id="_footnote_iota-response">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_internet_of_things_does_not_exist"><a class="anchor" href="#_the_internet_of_things_does_not_exist"></a>The Internet of Things Does Not Exist</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA is built for a global network of embedded devices communicating over mesh networks. This network does not currently exist and does not seem likely to exist. Currently manufactured IoT devices connect through the internet, and no compelling reason to believe that this may change exists.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_premature_use_of_post_quantum_cryptography"><a class="anchor" href="#_premature_use_of_post_quantum_cryptography"></a>Premature Use of Post-Quantum Cryptography</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IOTA uses cryptography that cannot be broken by quantum computers. <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> The use of such cryptography, specifically Winternitz signatures, leaves IOTA users vulnerable to loss of funds if they ever reuse an address. This attack has already been seen in practice, with one user reportedly losing $30,000 USD worth of IOTA. <sup class="footnote" id="_footnote_iota-stolen">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>As quantum computers large enough to threaten existing cryptosystems do not exist and may not exist for many decades, this use of post-quantum cryptography comes with no tangible benefit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_poor_wallet_security"><a class="anchor" href="#_poor_wallet_security"></a>Poor Wallet Security</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The IOTA wallet requires users to manually enter an 81 character seed, instead of securely generating one. This led users to use malicious online seed generators, leading to the theft of almost $4 million of user funds. <sup class="footnote" id="_footnote_seed-generators">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unusable_network_and_wallet"><a class="anchor" href="#_unusable_network_and_wallet"></a>Unusable Network and Wallet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Users have reported numerous issues with the IOTA network and wallet software. These include unusable software, a slow and unusable network, loss of funds, and an inability to move funds. <sup class="footnote" id="_footnote_a-tangled-mess">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup> <sup class="footnote" id="_footnote_iota-cannot-be-used-for-iot">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup> <sup class="footnote" id="_footnote_iota-disappointment">[<a id="_footnoteref_20" class="footnote" href="#_footnotedef_20" title="View footnote.">20</a>]</sup> <sup class="footnote" id="_footnote_iota-wallet-is-terrible">[<a id="_footnoteref_21" class="footnote" href="#_footnotedef_21" title="View footnote.">21</a>]</sup> <sup class="footnote" id="_footnote_iota-scam">[<a id="_footnoteref_22" class="footnote" href="#_footnotedef_22" title="View footnote.">22</a>]</sup> <sup class="footnote" id="_footnote_light-wallet-unusable">[<a id="_footnoteref_23" class="footnote" href="#_footnotedef_23" title="View footnote.">23</a>]</sup> <sup class="footnote" id="_footnote_money-trapped">[<a id="_footnoteref_24" class="footnote" href="#_footnotedef_24" title="View footnote.">24</a>]</sup> <sup class="footnote" id="_footnote_network-dead">[<a id="_footnoteref_25" class="footnote" href="#_footnotedef_25" title="View footnote.">25</a>]</sup> <sup class="footnote" id="_footnote_network-unusable">[<a id="_footnoteref_26" class="footnote" href="#_footnotedef_26" title="View footnote.">26</a>]</sup></p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. <a href="https://medium.com/@ercwl/iota-is-centralized-6289246e7b4d">IOTA is centralized</a>, <a href="https://twitter.com/ercwl">Eric Wall</a>
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. <a href="https://medium.com/@kaykurokawa/iota-doesnt-scale-fff54f56e975">IOTA Doesn&#8217;t Scale</a>, <a href="https://twitter.com/kaykurokawa">Kay Kurokawa</a>
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. <a href="https://blog.iota.org/gui-v2-5-2-latest-release-with-iota-reclaim-tool-32d364d6241a">GUI v2.5.2: Latest Release with IOTA Reclaim Tool</a>, <a href="https://twitter.com/DomSchiener">Dominik Schiener</a>
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. <a href="https://www.reddit.com/r/Iota/comments/6z04yn/why_is_the_coordinator_source_code_not_public/">Why is the coordinator source code not public?</a>
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. <a href="https://iota.org/IOTA_Whitepaper.pdf">IOTA Whitepaper</a>, <a href="https://blog.iota.org/@serguei.popov">Serguei Papov</a>
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. <a href="https://medium.com/@weka/why-i-find-iota-deeply-alarming-934f1908194b">Why I find Iota deeply alarming</a>, <a href="https://www.linkedin.com/in/nicksdjohnson/">Nick Johnson</a>
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. <a href="https://medium.com/@ralf/prepare-for-the-january-28-2018-iota-snapshot-10f565b371ab">Prepare for the January 28, 2018 IOTA Snapshot (updated)</a>, <a href="https://twitter.com/ralf">Ralf Rottmann</a>
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. <a href="https://github.com/mit-dci/tangled-curl/blob/master/vuln-iota.md">IOTA Vulnerability Report: Cryptanalysis of the Curl Hash Function Enabling Practical Signature Forgery Attacks on the IOTA Cryptocurrency</a>, <a href="https://www.linkedin.com/in/ethan-heilman-39896934/">Ethan Heilman</a>, <a href="http://nehanarula.org/">Neha Narula</a>, <a href="https://twitter.com/tdryja">Thaddeus Dryja</a>, and <a href="https://madars.org/">Madars Virza</a>
+</div>
+<div class="footnote" id="_footnotedef_9">
+<a href="#_footnoteref_9">9</a>. <a href="https://www.youtube.com/watch?v=7a96MHqND0g">Breaking IOTA&#8217;s Curl Hash Function</a>, <a href="http://cs-people.bu.edu/heilman/">Ethan Heilman</a>
+</div>
+<div class="footnote" id="_footnotedef_10">
+<a href="#_footnoteref_10">10</a>. <a href="https://blog.iota.org/gui-wallet-phase-two-of-the-reclaim-process-f5913109cf46">GUI Wallet: Phase Two of the Reclaim process</a>, <a href="https://twitter.com/DomSchiener">Dominik Schiener</a>
+</div>
+<div class="footnote" id="_footnotedef_11">
+<a href="#_footnoteref_11">11</a>. <a href="https://gist.github.com/Come-from-Beyond/a84ab8615aac13a4543c786f9e35b84a">CFB&#8217;s letters to Neha Narula&#8217;s team during their analysis of Curl-P hash function</a>, <a href="https://twitter.com/c___f___b">Sergey Ivancheglo</a>
+</div>
+<div class="footnote" id="_footnotedef_12">
+<a href="#_footnoteref_12">12</a>. <a href="https://twitter.com/peterktodd/status/907837055715172352">Tweet</a>, <a href="https://petertodd.org/">Peter Todd</a>
+</div>
+<div class="footnote" id="_footnotedef_13">
+<a href="#_footnoteref_13">13</a>. <a href="https://www.reddit.com/r/CryptoCurrency/comments/72l7kp/why_i_find_iota_deeply_alarming_eth_core_dev/">Issue with IOTA, Reddit Comment</a>, <a href="https://twitter.com/VitalikButerin">Vitalik Buterin</a>
+</div>
+<div class="footnote" id="_footnotedef_14">
+<a href="#_footnoteref_14">14</a>. <a href="https://twitter.com/nicksdjohnson/status/964036549162790912">Tweet</a>, <a href="https://www.linkedin.com/in/nicksdjohnson/">Nick Johnson</a>
+</div>
+<div class="footnote" id="_footnotedef_15">
+<a href="#_footnoteref_15">15</a>. <a href="https://www.media.mit.edu/posts/iota-response/">Our response to "A Cryptocurrency Without a Blockchain Has Been Built to Outperform Bitcoin"</a>, <a href="https://joi.ito.com/">Joi Ito</a>
+</div>
+<div class="footnote" id="_footnotedef_16">
+<a href="#_footnoteref_16">16</a>. <a href="https://www.reddit.com/r/CryptoCurrency/comments/7gwl38/hello_guys_i_have_lost_30k_in_iota_and_i_would/">User reports $30,000 worth of IOTA stolen due weakness of IOTA&#8217;s post-quantum signature scheme to address reuse</a>
+</div>
+<div class="footnote" id="_footnotedef_17">
+<a href="#_footnoteref_17">17</a>. <a href="https://twitter.com/nic__carter/status/954950774534090752">Tweet</a>, <a href="https://cryptofundamental.com/@nic__carter">Nic Carter</a>
+</div>
+<div class="footnote" id="_footnotedef_18">
+<a href="#_footnoteref_18">18</a>. <a href="http://codesuppository.blogspot.com/2017/12/iota-tangled-mess.html?m=1">IOTA: A Tangled Mess</a>, <a href="https://github.com/jratcliff63367">John Ratcliff</a>
+</div>
+<div class="footnote" id="_footnotedef_19">
+<a href="#_footnoteref_19">19</a>. <a href="https://shitcoin.com/iota-cannot-be-used-for-iot-loss-of-funds-may-occur-e45b1ed9dd6b">IOTA: Cannot be used for IoT. Loss of funds may occur</a>, <a href="https://twitter.com/abrkn">Andreas Brekken</a>
+</div>
+<div class="footnote" id="_footnotedef_20">
+<a href="#_footnoteref_20">20</a>. <a href="https://github.com/iotaledger/wallet/issues/734">My IOTA disappointment and a warning to others</a>, <a href="https://github.com/UnitTwopointZero">UnitTwopointZero</a>
+</div>
+<div class="footnote" id="_footnotedef_21">
+<a href="#_footnoteref_21">21</a>. <a href="https://www.reddit.com/r/Iota/comments/6y19n2/iota_wallet_is_terribleunusable/">IOTA Wallet is terrible/unusable</a>, <a href="https://www.reddit.com/user/winghaven">winghaven</a>
+</div>
+<div class="footnote" id="_footnotedef_22">
+<a href="#_footnoteref_22">22</a>. <a href="https://medium.com/supercryptocurrency/iota-cryptocurrency-is-a-scam-heres-10-reasons-why-ca111de0f19a">IOTA cryptocurrency is a scam, here’s 10 good reasons why</a>, <a href="https://medium.com/@AndroidAdvance">Android Advance</a>
+</div>
+<div class="footnote" id="_footnotedef_23">
+<a href="#_footnoteref_23">23</a>. <a href="https://forum.iota.org/t/light-wallet-2-3-1-unusable-invalid-transaction-hash-after-every-transfer-attempt/2689">Light Wallet 2.3.1 unusable</a>, <a href="https://forum.iota.org/u/portman/">Fabrizio Ranieri</a>
+</div>
+<div class="footnote" id="_footnotedef_24">
+<a href="#_footnoteref_24">24</a>. <a href="https://www.cryptocompare.com/coins/iot/post/p_554737">Iota light wallet is completely unusable</a>, <a href="https://www.cryptocompare.com/profile/mindblown/">mindblown</a>
+</div>
+<div class="footnote" id="_footnotedef_25">
+<a href="#_footnoteref_25">25</a>. <a href="https://twitter.com/jratcliff/status/939578638432985088">Tweet</a>, <a href="https://github.com/jratcliff63367">John Ratcliff</a>
+</div>
+<div class="footnote" id="_footnotedef_26">
+<a href="#_footnoteref_26">26</a>. <a href="https://twitter.com/maxekaplan/status/939916284967444480">Tweet</a>, <a href="https://twitter.com/maxekaplan">Max Kaplan</a>
+</div>
+</div>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Lightning Exchange</title>
+      <link>https://rodarmor.com/blog/lightning-exchange</link>
+      <guid>https://rodarmor.com/blog/lightning-exchange</guid>
+      <pubDate>Thu, 01 Mar 2018 17:28:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<div class="paragraph">
+<p>The <a href="https://en.wikipedia.org/wiki/Lightning_Network">Lightning Network</a> has the potential to greatly improve cryptocurrency exchanges.</p>
+</div>
+<div class="paragraph">
+<p>Lighting Network payment channels could be established between users and exchanges to speed the transfer of funds.</p>
+</div>
+<div class="paragraph">
+<p>This would be a huge boon, moving many on-chain deposit and withdrawal transactions off-chain, but is possibly only the beginning.</p>
+</div>
+<div class="paragraph">
+<p>Since Lightning Network payments can span different blockchains, an exchange could use a cross-chain Lightning node to expose its internal order book to external entities.</p>
+</div>
+<div class="paragraph">
+<p>As an example, imagine that an exchange has an LTC/BTC trading pair and wants to allow non-exchange users to fill the orders in their order book.</p>
+</div>
+<div class="paragraph">
+<p>The exchange runs a lightning node with a BTC channel and an LTC channel:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>x:   exchange node
+a:   third party node
+b:   third party node
+&lt;-&gt;: payment channel
+
+   BTC     LTC
+a &lt;---&gt; x &lt;---&gt; b</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The exchange dynamically sets the exchange rates across the channels based on their current best bid, best ask, and fee schedule.</p>
+</div>
+<div class="paragraph">
+<p>With a best ask of 0.6 and a 1% fee, the exchange sets the BTC&#8594;LTC exchange rate like so:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>   BTC     LTC
+a ----&gt; x ----&gt; b
+  0.606   1.000</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When a payment is routed across the channels in this direction, LTC sell orders are filled.</p>
+</div>
+<div class="paragraph">
+<p>With a best bid of 0.4 and a 1% fee, the exchange sets the exchange rate on the channel in the LTC&#8594;BTC direction like so:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>   BTC     LTC
+a &lt;---- x &lt;---- b
+  0.400   1.010</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A payment routed in this direction fills LTC buy orders.</p>
+</div>
+<div class="paragraph">
+<p>In this way, exchanges can expose their internal order book externally and trustlessly. Anyone who wishes to make cross-chain Lightning Network payments will discover and travel over these routes with no special effort required by the exchange, assuming that their rates are competitive. Also, it&#8217;s likely that third parties will appear whose sole purpose is to search the Lightning Network for arbitrage loops and travel them until they are exhausted, thus bridging multiple exchanges when their order books cross.</p>
+</div>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Mushrooms</title>
+      <link>https://rodarmor.com/blog/mushrooms</link>
+      <guid>https://rodarmor.com/blog/mushrooms</guid>
+      <pubDate>Sun, 15 Jul 2018 02:31:47 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>I woke up last night after only a few hours of sleep, sweaty and disoriented.</p>
+<p>Maybe it was miasmatic vapors rising up from beneath South of Market streets. Maybe it was the widening gyre opening up under the world. Maybe it was nothing at all. I don't know.</p>
+<p>It felt like the world had ended, but I was still there. And the lights of the city glimmered through the window, so, it was still there too.</p>
+<p>I rose, dressed, and walked out the front door, into the hallway. For air, I guess. And movement. Try to walk it off.</p>
+<p>I walked over immaculately carpeted floors and beside newly painted walls, past the elevator landing, and through the door with the emergency exit sign. I started down the unfinished throat of the building, through which it gasps for air. Down metal stairs. Past primer-painted walls.</p>
+<p>I felt like the thirty flights would do me good, maybe shake loose the static fuzz that buzzed in my head.</p>
+<p>My mind wandered. The fugue of interrupted sleep gave way to visions of a gossamer fabric, stretching off over the earth in all directions, a network of networks, with nodes like points of light shot through it, streams of data passing between them.</p>
+<p>The stairs ended abruptly. I had passed the ground floor. The door ahead of me was marked B5. I tried the handle. It was unlocked. I opened it and walked through.</p>
+<p>It was dark. Dim light streamed through from above. I imagined that it was from the lobby, shining from the light fixtures above the marble front desk, through the pile carpet, between cracks in the floor, and down into this subterranean space.</p>
+<p>It was huge. A deep hollow between wide supporting columns of concrete. The air was cool and still, down here in the guts of the building.</p>
+<p>The floor was covered with moist brown soil. It was carefully raked, and before me stretched neat rows of… something. Of dark shapes.</p>
+<p>I walked forward and hunched over, squinting, trying to resolve  out the shapes in the darkness.</p>
+<p>They were rows of fat black mushrooms. The size of a man's fist. Oozing a sticky red treacle down their stems.</p>
+<p>They smelled sweet. I imagined overripe mangos, cleft open to reveal insides not of fruit but of charred animal flesh.</p>
+<p>Crouching on my heels, the odor washed over me. Memories that weren't mine came to me unbidden. From deep in my blood.</p>
+<p>I saw my great uncle, who, according to whispers within the family was once a zionist terrorist known as the Lion of Bethlehem. He was in his youth, not the old man that I knew from pictures. A pale-faced and red-haired Ashkenazi, he had a knife in his hand, but it cut the dark skin of an arab neck. The knife was a shechita blade. Even though human meat is not kosher, no matter how it is cut.</p>
+<p>I saw a swede with green eyes like mine, butchering a snapphane in some muddy Scanian town square. It was a brutal show, to scare other rebels into submission.</p>
+<p>I saw a welsh bowman in a field wreathed with fog, nocking an arrow after the one before it had flown straight through an Anglo-Norman's chest. He squinted down the shaft, aiming to take a second life.</p>
+<p>More violence committed by men in my line glinted before my eyes, further and further back. The last was a glimpse of a spry homo sapian bringing a huge rock down on a neanderthal's skull, braining him. I started, and focused on the mushrooms in front of me.</p>
+<p>I pawed at one, its sap like venous fluid, thick and red, sticking to my fingers.</p>
+<p>It looked and smelled disgusting, but I wanted to eat it.</p>
+<p>I started to bring my fingers to my mouth, to lick them clean. But there was a thump, off in the distance, past pairs of huge columns of concrete that shot into the darkness and the rows of mushrooms at their feet.</p>
+<p>A shadow detached from the far wall and moved in my direction. Fear took me. The stench of the mushrooms was suddenly revolting. I stumbled backwards, wiping my hand on my jeans. I rushed towards door and the stairs beyond, up to the surface, back to the light.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>New Rustacean Resources</title>
+      <link>https://rodarmor.com/blog/new-rustacean-resources</link>
+      <guid>https://rodarmor.com/blog/new-rustacean-resources</guid>
+      <pubDate>Sun, 22 Jul 2018 23:27:00 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<ul>
+<li>
+<p><a href="https://rustup.rs"><em>obtain</em></a></p>
+<p>Rustup is the rust toolchain manager. It can install Rust and keep it up-to-date.</p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com"><em>write</em></a></p>
+<p>Visual Studio Code is easy to use and has great Rust integration.</p>
+</li>
+<li>
+<p><a href="https://doc.rust-lang.org/book/"><em>read</em></a></p>
+<p>The Rust Book is a comprehensive guide to the entire language.</p>
+</li>
+<li>
+<p><a href="https://play.rust-lang.org"><em>play</em></a></p>
+<p>The Rust Playground allows you to quickly try out and share code snippets.</p>
+</li>
+<li>
+<p><a href="https://github.com/rustlings/rustlings"><em>exercise</em></a></p>
+<p>Rustlings are bite-sized exercises for learning rust.</p>
+</li>
+<li>
+<p><a href="https://discord.gg/bGugdPp"><em>chat</em></a></p>
+<p>The Rust-Lang discord instance is a great place to chat about rust.</p>
+</li>
+</ul>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Cabal</title>
+      <link>https://rodarmor.com/blog/cabal</link>
+      <guid>https://rodarmor.com/blog/cabal</guid>
+      <pubDate>Sun, 18 Nov 2018 19:39:56 -0800</pubDate>
+      <content:encoded>
+        <![CDATA[<p>We all stood, gathered our things, walked down the cafe stairs and out to the dark and bustling Berlin street.</p>
+<p>After a few goodbyes and handshakes, everyone headed off in different directions, for different destinations.</p>
+<p>The meeting had felt momentous to me, a marker of strange and interesting times to come. I headed to the U-Bahn, alone.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Kademlion</title>
+      <link>https://rodarmor.com/blog/kademlion</link>
+      <guid>https://rodarmor.com/blog/kademlion</guid>
+      <pubDate>Tue, 12 Mar 2019 13:04:05 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>A <a href="https://en.wikipedia.org/wiki/Kademlia">Kademlia</a>-inspired modification of <a href="https://arxiv.org/abs/1701.04439">Dandelion</a> for use in <a href="https://grin-tech.org/">Grin</a>.</p>
+<h3><em>What</em></h3>
+<p>On boot and restart, Grin nodes pick a random 256-bit <em>node id</em> which is broadcast to their peers.</p>
+<p>Upon receiving a block, a new <em>epoch</em> begins if <code>block_height % 10 == 0</code>. The <em>epoch id</em> is the 256-bit blake2b hash of the block hash of the block that started the epoch. (I.E. the double blake2b hash of the block header.)</p>
+<p>At the start of each epoch, every node:</p>
+<ul>
+<li>
+<p>Calculates the <em>relay weight</em> of itself and all peers using the formula: <code>relay_weight = peer_id xor epoch_id</code>. Relay weight is interpreted as a 256 bit unsigned integer.</p>
+</li>
+<li>
+<p>Selects the node among itself and all peers with the highest relay weight as the <em>relay target</em>.</p>
+</li>
+<li>
+<p>Determines that it is in <em>stem mode</em> if the relay target is a peer, and in <em>fluff mode</em> if the relay target is itself.</p>
+</li>
+</ul>
+<p>Then, for every stem transaction received:</p>
+<ul>
+<li>
+<p>If it is in stem mode, it immediately relays it to its relay target.</p>
+</li>
+<li>
+<p>If it is in fluff mode, it aggregates transactions until its next patience timer expires, then broadcast them.</p>
+</li>
+</ul>
+<h3><em>Why</em></h3>
+<p>&quot;Heavy&quot; peers will naturally be chosen for relay targets, creating agreed-upon stem paths and fluff sinks, and leading to more opportunities for transaction aggregation.</p>
+<h3><em>Notes</em></h3>
+<ul>
+<li>
+<p>In a well-connected network, one node may be the sink for all transactions during a given epoch, and thus see all unaggregated transactions during the epoch. It may thus be desirable to stick to random mode selection as in Dandelion++, so as to break up stem paths with randomly selected fluff sinks.</p>
+</li>
+<li>
+<p>If block hashes are used directly as the epoch ID, peers could select peer IDs with a large number of leading 1s, thus biasing relay target selection towards themselves. Thus, we take the double blake2b hash of the block header as the epoch ID.</p>
+</li>
+<li>
+<p>Since the epoch ID is known by all, a node could pick node IDs that had high relay weight during that epoch. To provent this, if a node connects to a new peer it should use a randomly assigned peer ID for the current epoch.</p>
+</li>
+<li>
+<p>Should this modification be called <em>Kademlion</em>, or <em>Objective-Dandelion</em>?</p>
+</li>
+<li>
+<p>Thanks to Antioch Peverell for the <a href="https://github.com/mimblewimble/grin/issues/2176">clear description of Dandelion++</a> whose language I shamelessly copied.</p>
+</li>
+</ul>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Unix Utilities in Rust for Great Success</title>
+      <link>https://rodarmor.com/blog/unix-utilities-in-rust-for-great-success</link>
+      <guid>https://rodarmor.com/blog/unix-utilities-in-rust-for-great-success</guid>
+      <pubDate>Tue, 12 Mar 2019 22:30:51 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>I've often been asked for suggestions for an appropriate first project in Rust, and I think that writing a version of a unix utility is a great choice, for a bunch of reasons!</p>
+<ul>
+<li>
+<p>There is a diverse and colorful cast of characters to choose from that all provide an appropriate scope and difficulty level, such as:</p>
+</li>
+<li>
+<p><code>tree</code>: Print a graphical representation tree in visual form</p>
+</li>
+<li>
+<p><code>strings</code>: Extract plaintext strings from binary files</p>
+</li>
+<li>
+<p><code>wc</code>: Count the lines, characters, and bytes in a file</p>
+</li>
+<li>
+<p><code>ls</code>: List the contents of a directory</p>
+</li>
+<li>
+<p><code>nc</code>: Read and write bytes to network sockets</p>
+</li>
+<li>
+<p><code>cal</code>: Print a cute text calendar</p>
+</li>
+<li>
+<p><code>cat</code>: Copy streams to stdout</p>
+</li>
+<li>
+<p><code>cut</code>: Extract delimited fields from linewise text records</p>
+</li>
+<li>
+<p><code>sort</code>: Sort lines</p>
+</li>
+<li>
+<p><code>uniq</code>: Print only unique lines</p>
+</li>
+<li>
+<p>The existing implementation provided by your system serves as a specification, giving you an idea of how the tool works and whether or not your implementation has the same behavior.</p>
+</li>
+<li>
+<p>The core functionality of these utilities is very simple, allowing a learner to quickly build something useful. And, many have additional features, allowing a learner to add and build if they wish. <code>ls</code> is simple, but <code>ls -l</code> is quite the project!</p>
+</li>
+<li>
+<p>Many creative additions are possible, like colorful output, expressive configuration, and fun and useful new features.</p>
+</li>
+<li>
+<p>IO and error handling are often front-and-center when writing these utilities, which provides a great chance to get used to explicit error handling.</p>
+</li>
+<li>
+<p><a href="https://github.com/TeXitoi/structopt">structopt</a> makes argument parsing a breeze. And, by leveraging the type system and custom-derive, it provides a nice example of a situation where Rust has enormous advantages over other languages, allowing you to do more with less code.</p>
+</li>
+<li>
+<p>Rust binaries are fast to load and run, so performance is on par with native C implementations, and often much better than implementations in slower languages.</p>
+</li>
+<li>
+<p>Rust binaries are self-contained, so packaging and distribution is manageable, so you can share your work with the world.</p>
+</li>
+<li>
+<p>It's fun to use utilities that you wrote in your day-to-day workflow!</p>
+</li>
+<li>
+<p>There are lots of fabulous examples of utilities in the rust ecosystem, like <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>, <a href="https://github.com/sharkdp/fd">fd</a>, <a href="https://github.com/sharkdp/bat">bat</a>, <a href="https://github.com/ogham/exa">exa</a>, and <a href="https://github.com/sharkdp/hexyl">hexyl</a>. (Damn, David Peter is a beast.)</p>
+</li>
+<li>
+<p>If you're teaching others, a simple utility like <code>strings</code> makes for a great demonstration of the basics of the language.</p>
+</li>
+</ul>
+<p>I think whether you start with the book or a project like this depends on the learner.</p>
+<p>I much prefer to jump in and struggle mightily, so I started with a project like this (what eventually became <a href="https://github.com/casey/just/">just</a>), but I think a lot of people might prefer to start with <a href="https://doc.rust-lang.org/book/">the book</a>, or at least parts of the book.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Fractal</title>
+      <link>https://rodarmor.com/blog/fractal</link>
+      <guid>https://rodarmor.com/blog/fractal</guid>
+      <pubDate>Sun, 29 Sep 2019 15:57:40 -0700</pubDate>
+      <content:encoded>
+        <![CDATA[<p>I saw a janitor sweeping dirt from the fronds of his enormous push broom with a normal-sized broom.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>The Stack</title>
+      <link>https://rodarmor.com/blog/the-stack</link>
+      <guid>https://rodarmor.com/blog/the-stack</guid>
+      <pubDate>Mon, 30 Sep 2019 10:14:40 +0000</pubDate>
+      <content:encoded>
+        <![CDATA[<p>Computering is a party. The stack is best visualized as a bunch of Jenga
+blocks on the floor, and the heap as a bunch of balloons floating
+around bumping into each other on the ceiling. The fact that the stack
+usually grows downwards in memory is a travesty.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Popcorn Time Should Become a Browser</title>
+      <link>https://rodarmor.com/blog/popcorn-time-should-become-a-browser</link>
+      <guid>https://rodarmor.com/blog/popcorn-time-should-become-a-browser</guid>
+      <pubDate>Wed, 22 Jan 2020 23:56:19 -0800</pubDate>
+      <content:encoded>
+        <![CDATA[<p><em>I am not a lawyer. This is not legal advice.</em></p>
+<p>Popcorn Time-style video streaming apps seem to be vulnerable to legal
+action by rightsholders.</p>
+<p>For example, the
+<a href="https://torrentfreak.com/registrar-suspends-popcorn-time-domain-name-following-complaint-200121/">popcorntime.sh domain was recently suspended</a>,
+and <a href="https://torrentfreak.com/operator-of-popcorn-time-info-site-is-liable-for-piracy-supreme-court-rules-200115/">the operator of a site which merely provided information about how to obtain and use Popcorn Time was sentenced to prison</a>.</p>
+<p>Although given that Popcorn Time's servers do not themselves host
+infringing content this may seem a bit unfair, it is simply the reality
+of the world we live in.</p>
+<p>It is interesting to note, however, that although web browsers can be
+used in exactly the same way as Popcorn Time, namely searching for and
+viewing copyrighted movies, the developers of web browsers have thus far
+not faced successful legal challenges.</p>
+<p>I believe that there are two major factors that differentiate Popcorn
+Time from web browsers, and contribute to Popcorn Time's legal
+vulnerability:</p>
+<ol>
+<li>
+<p>Upon opening a web browser, the user must supply the URL of the site
+they wish to visit. Compare this to Popcorn Time, where upon opening
+the application for the first time, the user is immediately presented
+with a selection of unlicensed Hollywood movies to download.</p>
+<p>This difference greatly weakens Popcorn Time's claims against
+contributory copyright infringement. The developers of Popcorn Time
+cannot credibly claim to be ignorant to the types of movies that
+their users are downloading, whereas a web browser developer can
+credibly claim that the choice of website to visit is always left to
+the end user.</p>
+</li>
+<li>
+<p>Web browsers have substantial non-infringing uses. &quot;Substantial
+non-infringing use&quot; is jargon for a legal test used in the United
+States which protects the creator or purveyor of a piece of technology
+from liability for its use in infringement by users if that technology
+has &quot;substantial non-infringing uses&quot;. For the canonical example, see
+<a href="https://en.wikipedia.org/wiki/Sony_Corp._of_America_v._Universal_City_Studios,_Inc."><em>Sony Corp. of America v. Universal City Studios, Inc.</em></a>.</p>
+</li>
+</ol>
+<p>Whereas a web browser provider can rightly claim that there are many
+websites,
+<a href="https://youtu.be/2JO3oJybBTw">and it's possible an infringing one might slip in, there would be no way of knowing</a>,
+the popcorn time developers cannot claim the same. There is a single,
+fixed Popcorn Time backend, run by the Popcorn Time team, serving the
+same search results to every user.</p>
+<p>Fortunately, even given the above, I believe that Popcorn Time could
+implement a small number of strategic changes that would allow it to
+withstand future legal aggression:</p>
+<ul>
+<li>Add a URL bar, like a web browser's, to the top of the current GUI.</li>
+<li>Make the URL bar empty when opening the app for the first time, and
+display no default search results to the user.</li>
+<li>When the user enters a URL, use the existing Popcorn Time API protocol
+to contact the backend at that URL, and begin displaying search
+results from that backend to the user.</li>
+<li>If the app is closed and re-opened, keep the URL bar and the search
+results populated from the last run of the app.</li>
+</ul>
+<p>These changes would be simple, have a minimal impact on the current
+(quite excellent!) user experience, and leverage interaction flows, i.e.
+a URL bar, that users already understand.</p>
+<p>Additionally, the Popcorn Time team should create an official default
+search backend which focuses exclusively on free, non-infringing,
+user-created content.</p>
+<p>These steps would, I believe, nicely protect the developers and
+distributors of Popcorn Time from further legal challenges:</p>
+<ul>
+<li>
+<p>Popcorn Time, when first opened, would display no search results by
+default, and would require the user to direct the app with the URL of
+a site that they would like to visit. This would avoid the current
+situation where a litigator sitting in front of a judge can open the
+Popcorn Time application, and it will by immediately display a choice
+selection of infringing content, which makes for a terrible first
+impression.</p>
+</li>
+<li>
+<p>Users of the Popcorn Time application could use it to access both
+infringing and non-infringing content, providing a nice argument that
+the application does in fact have <em>substantial non-infringing uses</em>.</p>
+</li>
+<li>
+<p>Infringement via the application would be entirely at the direction of
+the end-user, and not directly assisted by the default search results
+provided by the developers.</p>
+</li>
+<li>
+<p>Developers wouldn't be running a search back end with infringing
+content, which is the only component of the current Popcorn Time
+system that stores problematic metadata about infringing content.</p>
+</li>
+<li>
+<p>I suspect that the official free-content focused search backend would
+be successful and useful in its own right.</p>
+</li>
+<li>
+<p>Since the search backend could now be switched by end users, a very
+large number of third-party backends would likely appear, serving
+content that might not be otherwise available from the current Popcorn
+Time backend.</p>
+</li>
+</ul>
+<p>In short, Popcorn Time should become a browser, and then all those
+lawyers and their handlers can go pound sand.</p>
+]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>Decentralize Messaging</title>
+      <link>https://rodarmor.com/blog/decentralize-messaging</link>
+      <guid>https://rodarmor.com/blog/decentralize-messaging</guid>
+      <pubDate>Wed, 29 Jan 2020 20:00:50 -0800</pubDate>
+      <content:encoded>
+        <![CDATA[<p>Twitter is <a href="https://twitter.com/jack/status/1204766078468911106">funding a team</a> to decentralize social media. I think they should start with messaging.</p>
+<h2>TL;DR</h2>
+<h3>Why</h3>
+<ul>
+<li>Messaging is a subset of social media.</li>
+<li>Users are tired of the wild proliferation of messaging apps.</li>
+<li>Social networks are all different, making them hard targets for standardization; messaging apps are all the same, making them easy targets for standardization and interoperability.</li>
+<li>Messaging is easier to scale.</li>
+</ul>
+<h3>How</h3>
+<ul>
+<li>Build on the matrix protocol.</li>
+<li>Extend email.</li>
+<li>Or maybe both.</li>
+</ul>
+<h2>Why</h2>
+<h3>messaging is a subset of social media</h3>
+<p>Messaging is a key feature of all social media platforms; decentralizing messaging is a prerequisite to decentralizing social media. And, even though it is a subset of social media, it still captures many of social media's central challenges: spam, moderation, and, most importantly, identity.</p>
+<h3>users are tired of the wild proliferation of messaging apps</h3>
+<p>The average user is more negatively impacted by the proliferation of messaging apps than they are by the proliferation of social networks.</p>
+<p>I have heard many people express irritation that they must use an inordinate number of messaging apps to communicate.</p>
+<p>I haven't heard the same complaints regarding the proliferation of social media platforms. My best as to why this is the case is that the need to communicate one-on-one with an individual has no substitute. If I'm meeting Bob for lunch, being able to message anyone but Bob is completely useless. So, I must use whichever app Bob uses, or get Bob to use whatever app I use, and, if we don't have a common messaging app, one of us will need to install a new one, furthering the proliferation problem.</p>
+<h3>social network distinctiveness</h3>
+<p>It's tempting to think that decentralizing social media should be begin with the features that we most readily associate with social media platforms, like posts, news feeds, and liking. However, the implementations of these features differ, and different social media platforms provide very different experiences.</p>
+<p>This makes these features of social media a hard target for standardization. However, the messaging features of these platforms are all nearly identical, making messaging an easy target for standardization.</p>
+<p>The goal is to decentralize social media as a whole, not just messaging, but messaging can be used as an initial step, with further extensions tackling the various individual features of social media platforms.</p>
+<h3>messaging is easier to scale</h3>
+<p>At the upper end, tens of millions of users may engage with an individual tweet, whereas group messages are limited to no more than fifty users. This makes messaging a more attractive initial target for decentralization, since it avoids needing to hit massive scale on day one.</p>
+<h3>a clear target</h3>
+<p>So, to summarize all the above, decentralized messaging has an obvious target feature set to aim for, a strong benefit to end users that will drive adoption, puts off hard scaling challenges, and can be extended in the future to all the features we associate with social media.</p>
+<h2>How</h2>
+<p>I see two promising and complementary paths to decentralized messaging: building on the new and shiny <a href="https://matrix.org">Matrix protocol</a>, and gradually extending email.</p>
+<p>The Matrix protocol has the huge advantage of being modern. It already supports many, if not most, of the features of modern messaging apps.</p>
+<p>Email, on the other hand, is ancient, weird, and has no support for modern luxuries like end-to-end encryption or user-presence notifications. However, email is extremely widely adopted, and a broadly supported and popular &quot;Email 2.0&quot; might receive a great deal of support.</p>
+<p>Although it would be a challenging process to navigate, email could be extended with features until it reaches parity with modern messaging apps, and further extended to support the features of existing social media networks. These extensions can be added in backwards compatible ways that allow mail agents to negotiate upgrades, falling back to plain email when extensions are not available.</p>
+<p>These extensions could include:</p>
+<ul>
+<li>delivery receipts</li>
+<li>optional read receipts</li>
+<li>user presence information</li>
+<li>binary serialization for efficiency and extensibility</li>
+<li>end-to-end encryption</li>
+<li>WebRTC signalling for negotiating VOIP and video chat</li>
+<li>signed introduction tokens to reduce spam</li>
+<li>a standard extension mechanism</li>
+</ul>
+<p>A hybrid approach might be to design an email-to-matrix protocol upgrade negotiation mechanism, allowing legacy email addresses to seamlessly upgrade to a modern messaging protocol.</p>
+<p>Whatever the approach, building a decentralized messaging protocol and integrating it into twitter would serve as an excellent foot in the door for decentralizing the entire social media landscape.</p>
+]]>
+      </content:encoded>
+    </item>
+  </channel>
+</rss>

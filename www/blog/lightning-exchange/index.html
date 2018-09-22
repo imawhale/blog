@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lightning Exchange – Casey Rodarmor's Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/blog/index.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/blog/feed.xml">
+</head>
+<body>
+  <header class="links">
+    <span><a href="/blog/">Casey Rodarmor's Blog</a></span>
+    <div class="spacer"></div><a href="/">homepage</a> <a href="mailto:casey@rodarmor.com">mail</a>
+    <a href="https://github.com/casey">github</a>
+  </header>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/lightning-exchange/" class="title">Lightning Exchange</a> <span class=
+      "tags"><a href="/blog/tag/cryptocurrency/" class="tag">cryptocurrency</a></span>
+    </header>
+    <div class="paragraph">
+      <p>The <a href="https://en.wikipedia.org/wiki/Lightning_Network">Lightning Network</a> has
+      the potential to greatly improve cryptocurrency exchanges.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lighting Network payment channels could be established between users and exchanges to
+      speed the transfer of funds.</p>
+    </div>
+    <div class="paragraph">
+      <p>This would be a huge boon, moving many on-chain deposit and withdrawal transactions
+      off-chain, but is possibly only the beginning.</p>
+    </div>
+    <div class="paragraph">
+      <p>Since Lightning Network payments can span different blockchains, an exchange could use a
+      cross-chain Lightning node to expose its internal order book to external entities.</p>
+    </div>
+    <div class="paragraph">
+      <p>As an example, imagine that an exchange has an LTC/BTC trading pair and wants to allow
+      non-exchange users to fill the orders in their order book.</p>
+    </div>
+    <div class="paragraph">
+      <p>The exchange runs a lightning node with a BTC channel and an LTC channel:</p>
+    </div>
+    <div class="listingblock">
+      <div class="content">
+        <pre class="highlight"><code>x:   exchange node
+a:   third party node
+b:   third party node
+&lt;-&gt;: payment channel
+
+   BTC     LTC
+a &lt;---&gt; x &lt;---&gt; b</code></pre>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>The exchange dynamically sets the exchange rates across the channels based on their
+      current best bid, best ask, and fee schedule.</p>
+    </div>
+    <div class="paragraph">
+      <p>With a best ask of 0.6 and a 1% fee, the exchange sets the BTC→LTC exchange rate like
+      so:</p>
+    </div>
+    <div class="listingblock">
+      <div class="content">
+        <pre class="highlight"><code>   BTC     LTC
+a ----&gt; x ----&gt; b
+  0.606   1.000</code></pre>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>When a payment is routed across the channels in this direction, LTC sell orders are
+      filled.</p>
+    </div>
+    <div class="paragraph">
+      <p>With a best bid of 0.4 and a 1% fee, the exchange sets the exchange rate on the channel in
+      the LTC→BTC direction like so:</p>
+    </div>
+    <div class="listingblock">
+      <div class="content">
+        <pre class="highlight"><code>   BTC     LTC
+a &lt;---- x &lt;---- b
+  0.400   1.010</code></pre>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>A payment routed in this direction fills LTC buy orders.</p>
+    </div>
+    <div class="paragraph">
+      <p>In this way, exchanges can expose their internal order book externally and trustlessly.
+      Anyone who wishes to make cross-chain Lightning Network payments will discover and travel
+      over these routes with no special effort required by the exchange, assuming that their rates
+      are competitive. Also, it’s likely that third parties will appear whose sole purpose is to
+      search the Lightning Network for arbitrage loops and travel them until they are exhausted,
+      thus bridging multiple exchanges when their order books cross.</p>
+    </div>
+  </article>
+</body>
+</html>

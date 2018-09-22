@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>On Feedback Loops – Casey Rodarmor's Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/blog/index.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/blog/feed.xml">
+</head>
+<body>
+  <header class="links">
+    <span><a href="/blog/">Casey Rodarmor's Blog</a></span>
+    <div class="spacer"></div><a href="/">homepage</a> <a href="mailto:casey@rodarmor.com">mail</a>
+    <a href="https://github.com/casey">github</a>
+  </header>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/on-feedback-loops/" class="title">On Feedback Loops</a> <span class=
+      "tags"><a href="/blog/tag/programming/" class="tag">programming</a></span>
+    </header>
+    <p>The most important thing that you do, both in first learning to program and in becoming an
+    effective, happy programmer, is to cultivate tight, effective feedback loops.</p>
+    <h2>The First Loop</h2>
+    <p>As a new learner, your feedback loop should look like this:</p>
+    <ol>
+      <li>
+        <p>Pick a programming concept, initially of the programming language that you're using, and
+        later from programming generally</p>
+      </li>
+      <li>
+        <p>Exercise that concept by writing original code</p>
+        <ul>
+          <li>
+            <p>You must create all the source files and write the code yourself, character by
+            character, in your editor. You must not copy paste. You must not use code-completion.
+            You must not reuse code you have already written. Programming is a learned skill, like
+            swinging a hammer.</p>
+          </li>
+          <li>
+            <p>You must run the code by typing the relevant command in your terminal</p>
+          </li>
+          <li>
+            <p>You must read, understand, and fix all errors and warnings</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Confirm that the code had the intended effect. Consider: If it didn't have the intended
+        effect, how would you know? If it doesn't work, study the concept and modify your code
+        until it does.</p>
+      </li>
+    </ol>
+    <p>Many people misunderstand how tight this feedback loop should be. Reading an entire chapter
+    of a programming book without writing code is madness. Identify the smallest piece of
+    information you can, perhaps the difference between 32-bit and 64-bit integers, or what a
+    <code>break</code> statement does. If you spend the vast majority of your time writing and
+    debugging code, and not that much time studying, you are doing it right.</p>
+    <h2>The Second Loop</h2>
+    <p>Once you want to build something, and you're no longer doing exercises solely to learn, the
+    loop changes a little bit:</p>
+    <ol>
+      <li>Decide on a feature or piece of functionality to implement</li>
+      <li>Write code that implements it and tests that make sure it works</li>
+      <li>Make the tests pass, and be sure that they actually test the code</li>
+      <li>Commit it to git with an informative commit message</li>
+    </ol>
+    <p>Note, though, that you are always still seeking feedback.</p>
+    <p>In the second loop, you get feedback by seeing that the feature works and the tests
+    pass.</p>
+    <h2>On Adulthood</h2>
+    <p>Think about how you would teach a child to program. You would sit next to them and show them
+    something new, like an assignment statement. You would explain what it does, why it's useful,
+    and then you would get them to write some assignment statments. You would ask them to write
+    some variations, like assigning <code>a</code> to <code>b</code> and then <code>b</code> to
+    <code>c</code>. If they had already learned about <code>print</code> statments, you would
+    assign to and then print a variable. Maybe you would show them some assignment statements that
+    didn't work, or were backwards, and get them to fix them.</p>
+    <p>Once they demonstrated that they understood and could independently apply the concept, you
+    would move on, and you would make sure to have them use assignment statements when exercising
+    the next concept.</p>
+    <p>Well, adults are just big, silly children, and they learn the same way. Don't labor under
+    the assumption that you should do anything that wouldn't work for someone smol.</p>
+  </article>
+</body>
+</html>

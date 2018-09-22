@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unix Utilities in Rust for Great Success – Casey Rodarmor's Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/blog/index.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/blog/feed.xml">
+</head>
+<body>
+  <header class="links">
+    <span><a href="/blog/">Casey Rodarmor's Blog</a></span>
+    <div class="spacer"></div><a href="/">homepage</a> <a href="mailto:casey@rodarmor.com">mail</a>
+    <a href="https://github.com/casey">github</a>
+  </header>
+  <hr>
+  <article>
+    <header>
+      <a href="/blog/unix-utilities-in-rust-for-great-success/" class="title">Unix Utilities in
+      Rust for Great Success</a> <span class="tags"><a href="/blog/tag/programming/" class=
+      "tag">programming</a></span>
+    </header>
+    <p>I've often been asked for suggestions for an appropriate first project in Rust, and I think
+    that writing a version of a unix utility is a great choice, for a bunch of reasons!</p>
+    <ul>
+      <li>
+        <p>There is a diverse and colorful cast of characters to choose from that all provide an
+        appropriate scope and difficulty level, such as:</p>
+      </li>
+      <li>
+        <p><code>tree</code>: Print a graphical representation tree in visual form</p>
+      </li>
+      <li>
+        <p><code>strings</code>: Extract plaintext strings from binary files</p>
+      </li>
+      <li>
+        <p><code>wc</code>: Count the lines, characters, and bytes in a file</p>
+      </li>
+      <li>
+        <p><code>ls</code>: List the contents of a directory</p>
+      </li>
+      <li>
+        <p><code>nc</code>: Read and write bytes to network sockets</p>
+      </li>
+      <li>
+        <p><code>cal</code>: Print a cute text calendar</p>
+      </li>
+      <li>
+        <p><code>cat</code>: Copy streams to stdout</p>
+      </li>
+      <li>
+        <p><code>cut</code>: Extract delimited fields from linewise text records</p>
+      </li>
+      <li>
+        <p><code>sort</code>: Sort lines</p>
+      </li>
+      <li>
+        <p><code>uniq</code>: Print only unique lines</p>
+      </li>
+      <li>
+        <p>The existing implementation provided by your system serves as a specification, giving
+        you an idea of how the tool works and whether or not your implementation has the same
+        behavior.</p>
+      </li>
+      <li>
+        <p>The core functionality of these utilities is very simple, allowing a learner to quickly
+        build something useful. And, many have additional features, allowing a learner to add and
+        build if they wish. <code>ls</code> is simple, but <code>ls -l</code> is quite the
+        project!</p>
+      </li>
+      <li>
+        <p>Many creative additions are possible, like colorful output, expressive configuration,
+        and fun and useful new features.</p>
+      </li>
+      <li>
+        <p>IO and error handling are often front-and-center when writing these utilities, which
+        provides a great chance to get used to explicit error handling.</p>
+      </li>
+      <li>
+        <p><a href="https://github.com/TeXitoi/structopt">structopt</a> makes argument parsing a
+        breeze. And, by leveraging the type system and custom-derive, it provides a nice example of
+        a situation where Rust has enormous advantages over other languages, allowing you to do
+        more with less code.</p>
+      </li>
+      <li>
+        <p>Rust binaries are fast to load and run, so performance is on par with native C
+        implementations, and often much better than implementations in slower languages.</p>
+      </li>
+      <li>
+        <p>Rust binaries are self-contained, so packaging and distribution is manageable, so you
+        can share your work with the world.</p>
+      </li>
+      <li>
+        <p>It's fun to use utilities that you wrote in your day-to-day workflow!</p>
+      </li>
+      <li>
+        <p>There are lots of fabulous examples of utilities in the rust ecosystem, like <a href=
+        "https://github.com/BurntSushi/ripgrep">ripgrep</a>, <a href=
+        "https://github.com/sharkdp/fd">fd</a>, <a href="https://github.com/sharkdp/bat">bat</a>,
+        <a href="https://github.com/ogham/exa">exa</a>, and <a href=
+        "https://github.com/sharkdp/hexyl">hexyl</a>. (Damn, David Peter is a beast.)</p>
+      </li>
+      <li>
+        <p>If you're teaching others, a simple utility like <code>strings</code> makes for a great
+        demonstration of the basics of the language.</p>
+      </li>
+    </ul>
+    <p>I think whether you start with the book or a project like this depends on the learner.</p>
+    <p>I much prefer to jump in and struggle mightily, so I started with a project like this (what
+    eventually became <a href="https://github.com/casey/just/">just</a>), but I think a lot of
+    people might prefer to start with <a href="https://doc.rust-lang.org/book/">the book</a>, or at
+    least parts of the book.</p>
+  </article>
+</body>
+</html>

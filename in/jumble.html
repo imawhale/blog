@@ -1,0 +1,20 @@
+published: 2016-09-07T20:47:00-07:00
+small:     true
++++
+<div style="height: 1em; position: relative;" class="jumble-container">
+  <script>
+    let container = document.getElementsByClassName('jumble-container')[0];
+    let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    function pick_letter() {
+      return letters[Math.floor(Math.random() * letters.length)];
+    }
+    for (let i = 0; i < 100; i++) {
+      let letter = document.createElement('div');
+      letter.textContent = pick_letter();
+      letter.style.position = 'absolute';
+      letter.style.transform = 'rotate(' + Math.random() + 'turn)';
+      letter.style.marginLeft = '' + Math.random() * 100 + '%';
+      container.appendChild(letter);
+    }
+  </script>
+</div>
