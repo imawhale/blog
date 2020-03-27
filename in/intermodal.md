@@ -1,5 +1,14 @@
 published: 2020-03-09T20:03:47-0700
 tags:      [sharing, programming]
+exerpt:    |
+  What happened to your personal library?
+  ---------------------------------------
+
+  Rows of LPs, shelves of VHS tapes, binders of CDs and DVDs, or maybe hard drives stuffed to overflowing.
+
+  It used to be common to maintain a personal content library, but in the last decade, most of us stopped. We ditched the tedium of tagging and sorting for Netflix, Spotify, and YouTube.
+
+  Whenever I think about this I feel a wistful longing for the past. And I don't think it's just nostalgia.
 +++
 
 _Intermodal is not intended to be used for unauthorized sharing. Any discussion of unauthorized sharing is not permitted in any project space, including GitHub and Discord._
