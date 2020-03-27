@@ -1,14 +1,7 @@
 published: 2008-03-07T01:22:00-07:00
 tags:      [fiction]
-excerpt:   |
-  "Well," he began, moving closer to her, "declarative programming is when you tell the computer what you want, and then the computer figures out how to get it. Pretty sweet, huh?"
-
-  "What kinds of things can you tell the computer you want?" she asked excitedly, her cheeks beginning to flush.
-
-  He thought for a moment, and began stroking her hair gently. "All kinds of things. There's a language called prolog you can use to ask about logical relationships. In SQL you can ask questions about huge quantities of data. With a program like bison you can declaratively describe a language, letting bison generate a program that recognizes it."
-
-  "Oh," she said breathlessly, leaning her head on his shoulder, "so I don't have to worry about choosing an algorithm--the computer will pick one for me?"
 +++
+
 "Well," he began, moving closer to her, "declarative programming is when you tell the computer what you want, and then the computer figures out how to get it. Pretty sweet, huh?"
 
 "What kinds of things can you tell the computer you want?" she asked excitedly, her cheeks beginning to flush.
@@ -16,6 +9,8 @@ excerpt:   |
 He thought for a moment, and began stroking her hair gently. "All kinds of things. There's a language called prolog you can use to ask about logical relationships. In SQL you can ask questions about huge quantities of data. With a program like bison you can declaratively describe a language, letting bison generate a program that recognizes it."
 
 "Oh," she said breathlessly, leaning her head on his shoulder, "so I don't have to worry about choosing an algorithm--the computer will pick one for me?"
+
++++
 
 He began caressing her breasts.
 

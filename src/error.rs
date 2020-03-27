@@ -3,6 +3,9 @@ use crate::common::*;
 #[derive(Debug, Snafu)]
 #[snafu(visibility(pub(crate)))]
 pub(crate) enum Error {
+  DuplicateExcerpt {
+    path: PathBuf,
+  },
   FilesystemIo {
     source: io::Error,
     path: PathBuf,

@@ -11,7 +11,6 @@ pub(crate) use std::{
 pub(crate) use askama::Template;
 pub(crate) use chrono::{DateTime, FixedOffset, Local};
 pub(crate) use inflector::Inflector;
-pub(crate) use lazy_static::lazy_static;
 pub(crate) use libc::EXIT_FAILURE;
 pub(crate) use regex::Regex;
 pub(crate) use serde::{Deserialize, Serialize};
@@ -28,6 +27,8 @@ pub(crate) const URL_PATH_PREFIX: &str = "/blog/";
 pub(crate) use crate::{error, fs};
 
 pub(crate) use crate::{
-  error::Error, frontmatter::Frontmatter, index::Index, item::Item, item_kind::ItemKind,
-  markup::Markup, opt::Opt, post::Post, slug::Slug, tag::Tag,
+  content::Content, error::Error, frontmatter::Frontmatter, index::Index, item::Item,
+  item_kind::ItemKind, markup::Markup, opt::Opt, post::Post, slug::Slug, tag::Tag,
 };
+
+pub(crate) type Result<T, E = Error> = std::result::Result<T, E>;

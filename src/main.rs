@@ -1,4 +1,7 @@
+use crate::common::*;
+
 mod common;
+mod content;
 mod error;
 mod filters;
 mod frontmatter;
@@ -11,8 +14,6 @@ mod opt;
 mod post;
 mod slug;
 mod tag;
-
-use crate::common::*;
 
 fn main() {
   if let Err(error) = Opt::from_args().run() {

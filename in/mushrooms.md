@@ -1,11 +1,5 @@
 published: 2018-07-15T02:31:47-07:00
 tags:      [fiction]
-excerpt:   |
-  I woke up last night after only a few hours of sleep, sweaty and disoriented.
-
-  Maybe it was miasmatic vapors rising up from beneath South of Market streets. Maybe it was the widening gyre opening up under the world. Maybe it was nothing at all. I don't know.
-
-  It felt like the world had ended, but I was still there. And the lights of the city glimmered through the window, so, it was still there too.
 style:     |
   html {
     color:      white;
@@ -15,11 +9,14 @@ style:     |
   a       { color: black; }
   a:hover { color: red;   }
 +++
+
 I woke up last night after only a few hours of sleep, sweaty and disoriented.
 
 Maybe it was miasmatic vapors rising up from beneath South of Market streets. Maybe it was the widening gyre opening up under the world. Maybe it was nothing at all. I don't know.
 
 It felt like the world had ended, but I was still there. And the lights of the city glimmered through the window, so, it was still there too.
+
++++
 
 I rose, dressed, and walked out the front door, into the hallway. For air, I guess. And movement. Try to walk it off.
 

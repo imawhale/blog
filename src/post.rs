@@ -16,35 +16,21 @@ impl Post {
     slug: &Slug,
     url_path: String,
   ) -> Result<Post, Error> {
-    lazy_static! {
-      static ref DELIMITER: Regex = Regex::new(r"(?m)^[+][+][+]$").unwrap();
-    }
+    let content = Content::load(path)?;
 
-    let text = fs::read_to_string(path)?;
-
-    let delimiter = DELIMITER
-      .find(&text)
-      .ok_or_else(|| Error::MissingFrontmatter {
-        path: path.to_path_buf(),
-      })?;
-
-    let frontmatter =
-      Frontmatter::from_yaml(&text[..delimiter.start()]).context(error::Deserialize { path })?;
-
-    let content = &text[delimiter.end()..];
-
-    let excerpt_html = match frontmatter.excerpt.as_ref() {
-      Some(excerpt) => Some(markup.render(excerpt)?),
-      None => None,
+    let excerpt_html = if let Some(excerpt) = &content.frontmatter.excerpt {
+      Some(markup.render(&excerpt)?)
+    } else {
+      None
     };
 
     Ok(Post {
-      published: frontmatter.published,
+      published: content.frontmatter.published,
       path: url_path,
-      html: markup.render(content)?,
+      html: markup.render(&content.body)?,
       slug: slug.clone(),
+      frontmatter: content.frontmatter,
       excerpt_html,
-      frontmatter,
     })
   }
 
