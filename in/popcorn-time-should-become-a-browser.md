@@ -2,6 +2,7 @@ published: 2020-01-22T23:56:19-0800
 tags:      [programming]
 title:     Popcorn Time Should Become a Browser
 +++
+
 _I am not a lawyer. This is not legal advice._
 
 Popcorn Time-style video streaming apps seem to be vulnerable to legal

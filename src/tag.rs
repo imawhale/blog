@@ -6,16 +6,18 @@ use Tag::*;
 #[serde(rename_all = "kebab-case")]
 pub(crate) enum Tag {
   Cryptocurrency,
-  Programming,
   Fiction,
+  Programming,
+  Sharing,
 }
 
 impl Tag {
   pub(crate) fn name(self) -> &'static str {
     match self {
       Cryptocurrency => "cryptocurrency",
-      Programming => "programming",
       Fiction => "fiction",
+      Programming => "programming",
+      Sharing => "sharing",
     }
   }
 
@@ -24,6 +26,6 @@ impl Tag {
   }
 
   pub(crate) fn all() -> &'static [Tag] {
-    &[Cryptocurrency, Programming, Fiction]
+    &[Cryptocurrency, Fiction, Programming, Sharing]
   }
 }
