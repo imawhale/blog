@@ -19,18 +19,24 @@
       <a href="/blog/intermodal/" class="title">Intermodal</a> <span class="tags"><a href=
       "/blog/tag/sharing/">sharing</a> · <a href="/blog/tag/programming/">programming</a></span>
     </header>
-    <p><em>Intermodal is not intended to be used for unauthorized sharing. Any discussion of
-    unauthorized sharing is not permitted in any project space, including GitHub and
-    Discord.</em></p>
-    <hr>
     <h2>TL;DR</h2>
-    <p>I've just published the first release of Intermodal, a command-line BitTorrent metainfo
-    utility.</p>
+    <p>Intermodal is a new command-line BitTorrent metainfo<sup class="footnote-reference"><a href=
+    "#metainfo">1</a></sup> utility for Linux, Windows, and macOS. The binary is called
+    <code>imdl</code>.</p>
     <p>It can create, display, and verify <code>.torrent</code> files, as well as generate magnet
     links.</p>
-    <p>The binary is called <code>imdl</code>.</p>
+    <p>It has lots of features and niceties, is easy to install and run, and is hopefully just the
+    beginning of an ambitious project to make decentralized content sharing better.</p>
     <p>Get it <a href="https://github.com/casey/intermodal">here</a>, try it out, and let me know
     what you think!</p>
+    <p><sup class="footnote-reference"><a href="#metainfo">1</a></sup> A BitTorrent
+    <code>.torrent</code> file, also known as a metainfo file, contains information that allows
+    peers to locate and retrieve the contents of the torrent. Creating and publishing this metainfo
+    is required to make the contents of a torrent available to peers.</p>
+    <p><em>Mentioning BitTorrent always carries the risk of prompting discussions of the
+    unauthorized sharing of copyrighted or censored content. Intermodal is not intended to
+    facilitate such unauthorized sharing. Discussion of unauthorized sharing is not permitted in
+    any project space, including GitHub and Discord.</em></p>
     <hr>
     <h2>What happened to your personal library?</h2>
     <p>Rows of LPs, shelves of VHS tapes, binders of CDs and DVDs, or maybe hard drives stuffed to
@@ -42,8 +48,8 @@
     <p>Modern content channels are usually designed around a feed and automatic recommendations,
     and don't make a strong distinction between things that are in <em>your</em> library and
     everything else. This makes it too easy to consume content compulsively and replaces active
-    search and curation with guzzling down what's on tap, biasing me away from what <em>I</em> like
-    and towards what <em>everyone else</em> likes.</p>
+    search and curation with guzzling down what's on tap, biasing you away from what <em>you</em>
+    like and towards what <em>everyone else</em> likes.</p>
     <p>Beyond that, once-accessible items often disappear due to obscure legal and contractual
     machinations out of one's control.</p>
     <p>Worse still, content that is below an invisible popularity threshold is hard to find, not

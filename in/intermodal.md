@@ -1,30 +1,23 @@
 published: 2020-03-09T20:03:47-0700
 tags:      [sharing, programming]
-excerpt:   |
-  What happened to your personal library?
-  ---------------------------------------
-
-  Rows of LPs, shelves of VHS tapes, binders of CDs and DVDs, or maybe hard drives stuffed to overflowing.
-
-  It used to be common to maintain a personal content library, but in the last decade, most of us stopped. We ditched the tedium of tagging and sorting for Netflix, Spotify, and YouTube.
-
-  Whenever I think about this I feel a wistful longing for the past. And I don't think it's just nostalgia.
 +++
-
-_Intermodal is not intended to be used for unauthorized sharing. Any discussion of unauthorized sharing is not permitted in any project space, including GitHub and Discord._
-
----
 
 TL;DR
 -----
 
-I've just published the first release of Intermodal, a command-line BitTorrent metainfo utility.
+Intermodal is a new command-line BitTorrent metainfo[^metainfo] utility for Linux, Windows, and macOS. The binary is called `imdl`.
 
 It can create, display, and verify `.torrent` files, as well as generate magnet links.
 
-The binary is called `imdl`.
+It has lots of features and niceties, is easy to install and run, and is hopefully just the beginning of an ambitious project to make decentralized content sharing better.
 
 Get it [here](https://github.com/casey/intermodal), try it out, and let me know what you think!
+
++++
+
+[^metainfo] A BitTorrent `.torrent` file, also known as a metainfo file, contains information that allows peers to locate and retrieve the contents of the torrent. Creating and publishing this metainfo is required to make the contents of a torrent available to peers.
+
+_Mentioning BitTorrent always carries the risk of prompting discussions of the unauthorized sharing of copyrighted or censored content. Intermodal is not intended to facilitate such unauthorized sharing. Discussion of unauthorized sharing is not permitted in any project space, including GitHub and Discord._
 
 ---
 
@@ -37,7 +30,7 @@ It used to be common to maintain a personal content library, but in the last dec
 
 Whenever I think about this I feel a wistful longing for the past. And I don't think it's just nostalgia.
 
-Modern content channels are usually designed around a feed and automatic recommendations, and don't make a strong distinction between things that are in _your_ library and everything else. This makes it too easy to consume content compulsively and replaces active search and curation with guzzling down what's on tap, biasing me away from what _I_ like and towards what _everyone else_ likes.
+Modern content channels are usually designed around a feed and automatic recommendations, and don't make a strong distinction between things that are in _your_ library and everything else. This makes it too easy to consume content compulsively and replaces active search and curation with guzzling down what's on tap, biasing you away from what _you_ like and towards what _everyone else_ likes.
 
 Beyond that, once-accessible items often disappear due to obscure legal and contractual machinations out of one's control.
 
