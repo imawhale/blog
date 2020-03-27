@@ -1,6 +1,6 @@
 published: 2018-02-22T04:25:00-07:00
 tags:      [cryptocurrency]
-exerpt: |
+excerpt:   |
   IOTA is a cryptocurrency targeting the internet of things. It purports to be scalable, decentralized, and feeless. Unfortunately it is none of those things.
 
   In this article I attempt to summarize the numerous technical, social, and ethical problems surrounding the IOTA project, The IOTA Foundation, and the IOTA developers.

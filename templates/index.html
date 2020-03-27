@@ -43,9 +43,9 @@
       {% if posts.len() == 1 %}
       {{post.html|safe}}
       {% else %}
-      {% match post.exerpt_html %}
-      {% when Some with (exerpt_html) %}
-        {{exerpt_html|safe}}
+      {% match post.excerpt_html %}
+      {% when Some with (excerpt_html) %}
+        {{excerpt_html|safe}}
         <div class="center"><a href="{{post.path|safe}}">⋯</a></div>
       {% when None %}
         {{post.html|safe}}

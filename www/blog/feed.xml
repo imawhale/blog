@@ -5,7 +5,7 @@
     <description>smoods</description>
     <language>en</language>
     <copyright>Copyright and related rights waived via CC0</copyright>
-    <lastBuildDate>Thu, 26 Mar 2020 21:27:11 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 21:40:34 -0700</lastBuildDate>
     <item>
       <title>Declarative Programming</title>
       <link>https://rodarmor.com/blog/declarative-programming</link>
@@ -1034,7 +1034,7 @@ lawyers and their handlers can go pound sand.</p>
 <p>This is profoundly saddening.</p>
 <hr />
 <h2>How did we get here?</h2>
-<p>I think we stopped curating our own libraries due to three factors: ease of use, features, and incentives. These factors have pushed people away from decentralized content networks, like BiTorrrent and store-bought CDs, and towards centralized apps, like Spotify and Netflix.</p>
+<p>I think we stopped curating our own libraries due to three factors: ease of use, features, and incentives. These factors have pushed people away from decentralized content networks, like BitTorrent and store-bought CDs, and towards centralized apps, like Spotify and Netflix.</p>
 <h3>Ease of Use</h3>
 <p>For all their flaws, centralized apps are incredibly easy to use. Just open a browser tab and play.</p>
 <p>To get content into your own library and play it, you need to use a number of applications in concert­a web browser to search, another app to download, a file browser to organize, and finally a player to listen or watch. This is doable, but is a huge chore compared to centralized apps.</p>
@@ -1083,12 +1083,12 @@ lawyers and their handlers can go pound sand.</p>
 <p>Before the invention of the humble 40' shipping container, and the intermodal transportation network that it enabled, the majority of the world's goods were transported as so-called <a href="https://en.wikipedia.org/wiki/Break_bulk_cargo">bulk break cargo</a>.</p>
 <p>Bulk break cargo is packed in bags, barrels, boxes, crates, and drums of varying sizes. Loading such cargo onto a truck, cargo ship, or train took labor and time, and was a major source of friction and cost in the shipping of goods from place to place.</p>
 <p>The invention and standardization of intermodal containers, the 20' and 40' shipping containers of today, changed all that. Cargo could now be packed into uniformly sized containers of known strength and weight, of a size suitable for transportation by train, truck, or ship. This standardization made the once back-breaking work of moving cargo through multiple transportation modes easy and fast. What once required teams of stout men could now be done easily with cranes and other equipment.</p>
-<p>In many ways, when it comes to decentralized digital content, we are very much living in an era of bulk break cargo. Painstaking effort is required to prepare content for transportation across different modes, e.g. BitTorrent, the web, or Usenet; and it is either impossible or takes complex hueristics to answer simple questions, like what <em>is</em> a piece of content, anyways?</p>
+<p>In many ways, when it comes to decentralized digital content, we are very much living in an era of bulk break cargo. Painstaking effort is required to prepare content for transportation across different modes, e.g. BitTorrent, the web, or Usenet; and it is either impossible or takes complex heuristics to answer simple questions, like what <em>is</em> a piece of content, anyways?</p>
 <p>By standardizing metadata, we can make more efficient the conveyance of digital content across different modes of transportation, and allow rich services to be built on top of that content.</p>
 <p>Thus, &quot;Intermodal&quot;.</p>
 <hr />
 <h2><code>imdl</code></h2>
-<p>After much hand-wringing and false starts, I decided that a good place to start would be a BitTorrent metainfo (that is to say, <code>.torrent</code> file) creator. The first version is full of features and nicities, and is ready for users today.</p>
+<p>After much hand-wringing and false starts, I decided that a good place to start would be a BitTorrent metainfo (that is to say, <code>.torrent</code> file) creator. The first version is full of features and niceties, and is ready for users today.</p>
 <p>The binary is called <code>imdl</code>, and development is hosted <a href="https://github.com/casey/intermodal">on GitHub</a>.</p>
 <p>BitTorrent is widely used, and a torrent creator is much simpler than a torrent client, tracker, or index, making a good place to start.</p>
 <p>Although <code>imdl</code> does not today have any groundbreaking new features, and no functionality for creating metadata manifests, it is a natural place to start adding such features.</p>

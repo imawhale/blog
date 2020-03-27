@@ -1,6 +1,6 @@
 published: 2010-10-24T19:25:00-0700
 tags:      [fiction]
-exerpt: |
+excerpt:   |
   This is pretty nuts. I was poking around in the storage area of my house, and I found a huge cardboard box filled with letters and audio cassettes and dust. Everything was Danish, German, and English, but mostly Danish. The name Max Rasmussen was everywhere, so I think it was all his stuff. I had to get a tape player at best buy to play the tapes, but surprisingly, they all played fine. One of them was an interview, in English, between Max and a man named Hans. I listened to it a few times, and I don't even know what to say. It's transcribed below.
 +++
 This is pretty nuts. I was poking around in the storage area of my house, and I found a huge cardboard box filled with letters and audio cassettes and dust. Everything was Danish, German, and English, but mostly Danish. The name Max Rasmussen was everywhere, so I think it was all his stuff. I had to get a tape player at best buy to play the tapes, but surprisingly, they all played fine. One of them was an interview, in English, between Max and a man named Hans. I listened to it a few times, and I don't even know what to say. It's transcribed below.

@@ -1,6 +1,6 @@
 published: 2018-07-15T02:31:47-07:00
 tags:      [fiction]
-exerpt:    |
+excerpt:   |
   I woke up last night after only a few hours of sleep, sweaty and disoriented.
 
   Maybe it was miasmatic vapors rising up from beneath South of Market streets. Maybe it was the widening gyre opening up under the world. Maybe it was nothing at all. I don't know.

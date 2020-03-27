@@ -15,7 +15,7 @@ pub(crate) struct Frontmatter {
   #[serde(default, skip_serializing_if = "is_default")]
   pub(crate) tags: Vec<Tag>,
   #[serde(default, skip_serializing_if = "is_default")]
-  pub(crate) exerpt: Option<String>,
+  pub(crate) excerpt: Option<String>,
   #[serde(default, skip_serializing_if = "is_default")]
   pub(crate) style: Option<String>,
 }
@@ -38,7 +38,7 @@ impl Frontmatter {
       small: false,
       hidden: false,
       tags: Vec::new(),
-      exerpt: None,
+      excerpt: None,
       style: None,
     }
   }

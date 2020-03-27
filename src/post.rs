@@ -6,7 +6,7 @@ pub(crate) struct Post {
   pub(crate) path: String,
   pub(crate) frontmatter: Frontmatter,
   pub(crate) slug: Slug,
-  pub(crate) exerpt_html: Option<String>,
+  pub(crate) excerpt_html: Option<String>,
 }
 
 impl Post {
@@ -33,8 +33,8 @@ impl Post {
 
     let content = &text[delimiter.end()..];
 
-    let exerpt_html = match frontmatter.exerpt.as_ref() {
-      Some(exerpt) => Some(markup.render(exerpt)?),
+    let excerpt_html = match frontmatter.excerpt.as_ref() {
+      Some(excerpt) => Some(markup.render(excerpt)?),
       None => None,
     };
 
@@ -43,7 +43,7 @@ impl Post {
       path: url_path,
       html: markup.render(content)?,
       slug: slug.clone(),
-      exerpt_html,
+      excerpt_html,
       frontmatter,
     })
   }

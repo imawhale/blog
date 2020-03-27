@@ -1,6 +1,6 @@
 published: 2020-03-09T20:03:47-0700
 tags:      [sharing, programming]
-exerpt:    |
+excerpt:   |
   What happened to your personal library?
   ---------------------------------------
 
@@ -52,7 +52,7 @@ This is profoundly saddening.
 How did we get here?
 --------------------
 
-I think we stopped curating our own libraries due to three factors: ease of use, features, and incentives. These factors have pushed people away from decentralized content networks, like BiTorrrent and store-bought CDs, and towards centralized apps, like Spotify and Netflix.
+I think we stopped curating our own libraries due to three factors: ease of use, features, and incentives. These factors have pushed people away from decentralized content networks, like BitTorrent and store-bought CDs, and towards centralized apps, like Spotify and Netflix.
 
 ### Ease of Use
 
@@ -120,7 +120,7 @@ Bulk break cargo is packed in bags, barrels, boxes, crates, and drums of varying
 
 The invention and standardization of intermodal containers, the 20' and 40' shipping containers of today, changed all that. Cargo could now be packed into uniformly sized containers of known strength and weight, of a size suitable for transportation by train, truck, or ship. This standardization made the once back-breaking work of moving cargo through multiple transportation modes easy and fast. What once required teams of stout men could now be done easily with cranes and other equipment.
 
-In many ways, when it comes to decentralized digital content, we are very much living in an era of bulk break cargo. Painstaking effort is required to prepare content for transportation across different modes, e.g. BitTorrent, the web, or Usenet; and it is either impossible or takes complex hueristics to answer simple questions, like what _is_ a piece of content, anyways?
+In many ways, when it comes to decentralized digital content, we are very much living in an era of bulk break cargo. Painstaking effort is required to prepare content for transportation across different modes, e.g. BitTorrent, the web, or Usenet; and it is either impossible or takes complex heuristics to answer simple questions, like what _is_ a piece of content, anyways?
 
 By standardizing metadata, we can make more efficient the conveyance of digital content across different modes of transportation, and allow rich services to be built on top of that content.
 
@@ -131,7 +131,7 @@ Thus, "Intermodal".
 `imdl`
 ------
 
-After much hand-wringing and false starts, I decided that a good place to start would be a BitTorrent metainfo (that is to say, `.torrent` file) creator. The first version is full of features and nicities, and is ready for users today.
+After much hand-wringing and false starts, I decided that a good place to start would be a BitTorrent metainfo (that is to say, `.torrent` file) creator. The first version is full of features and niceties, and is ready for users today.
 
 The binary is called `imdl`, and development is hosted [on GitHub](https://github.com/casey/intermodal).
 

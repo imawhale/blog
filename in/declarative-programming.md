@@ -1,6 +1,6 @@
 published: 2008-03-07T01:22:00-07:00
 tags:      [fiction]
-exerpt:    |
+excerpt:   |
   "Well," he began, moving closer to her, "declarative programming is when you tell the computer what you want, and then the computer figures out how to get it. Pretty sweet, huh?"
 
   "What kinds of things can you tell the computer you want?" she asked excitedly, her cheeks beginning to flush.
