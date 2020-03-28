@@ -5,7 +5,7 @@
     <description>smoods</description>
     <language>en</language>
     <copyright>Copyright and related rights waived via CC0</copyright>
-    <lastBuildDate>Fri, 27 Mar 2020 17:14:13 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 03:55:13 -0700</lastBuildDate>
     <item>
       <title>Declarative Programming</title>
       <link>https://rodarmor.com/blog/declarative-programming</link>
@@ -1094,6 +1094,7 @@ lawyers and their handlers can go pound sand.</p>
 <p>Although <code>imdl</code> does not today have any groundbreaking new features, and no functionality for creating metadata manifests, it is a natural place to start adding such features.</p>
 <p><code>imdl</code> is written in Rust. Rust is fast, correct, and makes it easy to distribute self-contained binaries to users. Additionally, Rust can be compiled to <a href="https://webassembly.org/">WebAssembly</a>, so bits of <code>imdl</code> might eventually be adapted to run in the browser.</p>
 <p><code>imdl</code> will hopefully be extended with all manner of useful features, so torrent-creation functionality lives under the <code>torrent</code> subcommand: <code>imdl torrent create</code>, <code>imdl torrent verify</code>, <code>imdl torrent show</code>, and so on.</p>
+<p><img src="https://raw.githubusercontent.com/casey/intermodal/master/www/demo.gif" alt="demonstration animation" /></p>
 <p>I've tried to add all the useful features of existing torrent file creators that I could find, so hopefully <code>imdl</code> is immediately useful. I owe a huge debt of gratitude to the <a href="https://imdl.io/book/prior-art.html">many exiting open-source torrent creators</a>, which have been a font of inspiration and good ideas.</p>
 <hr />
 <h2>What's next?</h2>
