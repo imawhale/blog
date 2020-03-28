@@ -9,6 +9,8 @@ Intermodal is a new command-line BitTorrent metainfo[^metainfo] utility for Linu
 
 It can create, display, and verify `.torrent` files, as well as generate magnet links.
 
+![demonstration animation](https://raw.githubusercontent.com/casey/intermodal/master/www/demo.gif)
+
 It has lots of features and niceties, is easy to install and run, and is hopefully just the beginning of an ambitious project to make decentralized content sharing better.
 
 Get it [here](https://github.com/casey/intermodal), try it out, and let me know what you think!
@@ -135,8 +137,6 @@ Although `imdl` does not today have any groundbreaking new features, and no func
 `imdl` is written in Rust. Rust is fast, correct, and makes it easy to distribute self-contained binaries to users. Additionally, Rust can be compiled to [WebAssembly](https://webassembly.org/), so bits of `imdl` might eventually be adapted to run in the browser.
 
 `imdl` will hopefully be extended with all manner of useful features, so torrent-creation functionality lives under the `torrent` subcommand: `imdl torrent create`, `imdl torrent verify`, `imdl torrent show`, and so on.
-
-![demonstration animation](https://raw.githubusercontent.com/casey/intermodal/master/www/demo.gif)
 
 I've tried to add all the useful features of existing torrent file creators that I could find, so hopefully `imdl` is immediately useful. I owe a huge debt of gratitude to the [many exiting open-source torrent creators](https://imdl.io/book/prior-art.html), which have been a font of inspiration and good ideas.
 

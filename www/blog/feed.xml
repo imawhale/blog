@@ -5,7 +5,7 @@
     <description>smoods</description>
     <language>en</language>
     <copyright>Copyright and related rights waived via CC0</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 03:55:13 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 04:06:59 -0700</lastBuildDate>
     <item>
       <title>Declarative Programming</title>
       <link>https://rodarmor.com/blog/declarative-programming</link>
@@ -1018,6 +1018,7 @@ lawyers and their handlers can go pound sand.</p>
         <![CDATA[<h2>TL;DR</h2>
 <p>Intermodal is a new command-line BitTorrent metainfo<sup class="footnote-reference"><a href="#metainfo">1</a></sup> utility for Linux, Windows, and macOS. The binary is called <code>imdl</code>.</p>
 <p>It can create, display, and verify <code>.torrent</code> files, as well as generate magnet links.</p>
+<p><img src="https://raw.githubusercontent.com/casey/intermodal/master/www/demo.gif" alt="demonstration animation" /></p>
 <p>It has lots of features and niceties, is easy to install and run, and is hopefully just the beginning of an ambitious project to make decentralized content sharing better.</p>
 <p>Get it <a href="https://github.com/casey/intermodal">here</a>, try it out, and let me know what you think!</p>
 <p><sup class="footnote-reference"><a href="#metainfo">1</a></sup> A BitTorrent <code>.torrent</code> file, also known as a metainfo file, contains information that allows peers to locate and retrieve the contents of the torrent. Creating and publishing this metainfo is required to make the contents of a torrent available to peers.</p>
@@ -1094,7 +1095,6 @@ lawyers and their handlers can go pound sand.</p>
 <p>Although <code>imdl</code> does not today have any groundbreaking new features, and no functionality for creating metadata manifests, it is a natural place to start adding such features.</p>
 <p><code>imdl</code> is written in Rust. Rust is fast, correct, and makes it easy to distribute self-contained binaries to users. Additionally, Rust can be compiled to <a href="https://webassembly.org/">WebAssembly</a>, so bits of <code>imdl</code> might eventually be adapted to run in the browser.</p>
 <p><code>imdl</code> will hopefully be extended with all manner of useful features, so torrent-creation functionality lives under the <code>torrent</code> subcommand: <code>imdl torrent create</code>, <code>imdl torrent verify</code>, <code>imdl torrent show</code>, and so on.</p>
-<p><img src="https://raw.githubusercontent.com/casey/intermodal/master/www/demo.gif" alt="demonstration animation" /></p>
 <p>I've tried to add all the useful features of existing torrent file creators that I could find, so hopefully <code>imdl</code> is immediately useful. I owe a huge debt of gratitude to the <a href="https://imdl.io/book/prior-art.html">many exiting open-source torrent creators</a>, which have been a font of inspiration and good ideas.</p>
 <hr />
 <h2>What's next?</h2>
